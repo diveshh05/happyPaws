@@ -1,19 +1,50 @@
 ﻿/* HappyPaws custom styles. Loaded AFTER Eduleb's style.css so these win. */
+
+/* ---------- Logo (navbar + footer) ---------- */
 .site-logo a,
-.footer-logo{
+.footer-logo {
     font-family: 'Jost', sans-serif;
     font-size: 28px;
     font-weight: 700;
     text-decoration: none;
-}
-/* Hero photo */
-.hp-hero-img {
-    width: 100%;
-    max-height: 480px;
-    object-fit: cover;
+    white-space: nowrap; /* keep the paw and the name on one line */
 }
 
-/* On phones and tablets, make it shorter so the search card stays visible */
+/* ---------- Home hero ---------- */
+/* Plain soft background + our own spacing
+   (Eduleb's hb_height/ht_top added extra space for a see-through menu we don't use) */
+section.hp-hero {
+    background-color: #fdf6ee;
+    padding: 60px 0;
+    height: auto; /* grow to fit the content instead of a fixed height */
+    min-height: 0;
+}
+
+/* Simple search card (F8) */
+.hp-search {
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-top: 24px;
+}
+/* Cancel Eduleb's 250px gap above the hero heading (style.css line 481) */
+.hp-hero .hero-text h1 {
+    padding-top: 0;
+}
+
+/* Hero photo: never taller than 480px; crop instead of stretching */
+.hp-hero-img {
+    display: block;
+    width: 100%;
+    max-width: 440px; /* not too wide, so the box stays portrait */
+    aspect-ratio: 4 / 5; /* box shape: 4 wide for every 5 tall */
+    object-fit: cover; /* fill the box without squashing */
+    object-position: top; /* if anything is cut, cut from the bottom */
+    margin: 0 auto; /* centre the photo in its column */
+}
+
+/* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
     .hp-hero-img {
         max-height: 280px;
