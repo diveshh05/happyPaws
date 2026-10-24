@@ -201,6 +201,60 @@ section.section-top {
     margin-top: 12px;
 }
 
+/* ---------- Forms (Login, Register and later forms) ---------- */
+/* Eduleb's ".contact input" makes every input 70px tall and grey.
+   An asp:Button is an <input>, so put the purple button style back. */
+.contact input.btn_one {
+    height: auto;
+    width: 100%;
+    padding: 15px 30px;
+    background: #525fe1;
+    border: 1px solid #525fe1;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 600;
+}
+
+    .contact input.btn_one:hover {
+        background: #f26b65;
+        border-color: #f26b65;
+    }
+
+/* The "Remember me" checkbox is an <input> too: undo the 70px box */
+.contact .hp-remember input {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin-right: 8px;
+}
+
+.contact .hp-remember label {
+    font-weight: 400;
+}
+
+/* Validation messages (red, small) */
+.hp-error {
+    display: block;
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* Right-hand panel (replaces Eduleb's map) */
+.hp-side-panel {
+    background: #fdf6ee;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.hp-side-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
 
 
 /* On phones and tablets, make the photo shorter so the search card stays visible */
