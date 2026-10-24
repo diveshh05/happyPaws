@@ -85,12 +85,15 @@
                                     ErrorMessage="Please enter a valid Mauritian phone number." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
-                            <!-- Address: YOUR TURN (see below) -->
-                            <div class="form-group col-md-6 mb-3">
+                            <!-- Address -->
+                            <div class="form-group col-md-12 mb-3">
                                 <asp:Label runat="server" AssociatedControlID="txtAddress" Text="Address" />
                                 <asp:TextBox ID="txtAddress" runat="server" TextMode="MultiLine" Rows="2" CssClass="form-control" MaxLength="200" placeholder="e.g. 123 Main Street" />
                                 <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ControlToValidate="txtAddress"
                                     ErrorMessage="Please enter your address." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
+                                <asp:RegularExpressionValidator ID="revAddress" runat="server" ControlToValidate="txtAddress"
+                                    ValidationExpression="^[\s\S]{0,200}$"
+                                    ErrorMessage="Address must be 200 characters or fewer." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
                             <!-- Password -->
