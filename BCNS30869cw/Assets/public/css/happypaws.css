@@ -221,14 +221,16 @@ section.section-top {
     }
 
 /* The "Remember me" checkbox is an <input> too: undo the 70px box */
-.contact .hp-remember input {
+.contact .hp-remember input,
+.contact .hp-choice input {
     height: auto;
     width: auto;
     padding: 0;
     margin-right: 8px;
 }
 
-.contact .hp-remember label {
+.contact .hp-remember label,
+.contact .hp-choice label {
     font-weight: 400;
 }
 
@@ -254,7 +256,16 @@ section.section-top {
     border-radius: 16px;
     margin-bottom: 20px;
 }
+/* Space between the radio options */
+.hp-choice label {
+    margin-right: 24px;
+}
 
+/* Role descriptions in the side panel */
+.hp-role h5 i {
+    color: #525fe1;
+    margin-right: 8px;
+}
 
 
 /* On phones and tablets, make the photo shorter so the search card stays visible */
