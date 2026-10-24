@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BCNS30869cw.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="HappyPaws Mauritius - adopt a rescued pet or responsibly surrender your pet" />
+    <title>HappyPaws</title>
+
+    <!-- Bootstrap 5.3.2 (shipped with Eduleb) -->
+    <link rel="stylesheet" href="~/Assets/public/bootstrap/css/bootstrap.min.css" />
+    <!-- Google Fonts used by Eduleb -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/Assets/public/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Assets/public/fonts/themify-icons.css" />
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="~/Assets/public/owlcarousel/css/owl.carousel.css" />
+    <link rel="stylesheet" href="~/Assets/public/owlcarousel/css/owl.theme.css" />
+    <link rel="stylesheet" href="~/Assets/public/css/jquery-simple-mobilemenu.css" />
+    <link rel="stylesheet" href="~/Assets/public/css/magnific-popup.css" />
+    <link rel="stylesheet" href="~/Assets/public/css/animate.css" />
+    <!-- Eduleb's main stylesheet (load last so it wins over the others) -->
+    <link rel="stylesheet" href="~/Assets/public/css/style.css" />
+
+    <!-- Hole #1: lets a page add its own extra CSS if it needs to -->
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!-- Step 3b: the navbar goes here -->
+
+        <!-- Hole #2: each page's own content goes here -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+        <!-- Step 3c: the footer goes here -->
+
+    </form>
+
+    <!-- Eduleb's JavaScript, in the same order as the template -->
+    <script src="<%: ResolveUrl("~/Assets/public/js/jquery-1.12.4.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/bootstrap/js/bootstrap.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/js/modernizr-2.8.3.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/js/jquery-simple-mobilemenu.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/owlcarousel/js/owl.carousel.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/js/jquery.magnific-popup.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/js/jquery.inview.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/js/scrolltopcontrol.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/js/wow.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/public/js/scripts.js") %>"></script>
+</body>
+</html>
