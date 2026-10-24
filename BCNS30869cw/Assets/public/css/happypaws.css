@@ -151,6 +151,13 @@ section.hp-testi {
     }
 }
 
+/* ---------- Event cards ---------- */
+/* Same photo shape on every card (same idea as the pet cards) */
+.hp-event-card img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
 
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {

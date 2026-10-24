@@ -223,6 +223,9 @@
     <Content Include="Assets\public\img\happypaws\ads\ad-adoption-day.jpg" />
     <Content Include="Assets\public\img\happypaws\ads\ad-register.jpg" />
     <Content Include="Assets\public\img\happypaws\ads\ad-sponsor.jpg" />
+    <Content Include="Assets\public\img\happypaws\event-1.jpg" />
+    <Content Include="Assets\public\img\happypaws\event-2.jpg" />
+    <Content Include="Assets\public\img\happypaws\event-3.jpg" />
     <Content Include="Assets\public\img\happypaws\hero-pet.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-1.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-2.jpg" />

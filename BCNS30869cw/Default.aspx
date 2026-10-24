@@ -291,6 +291,58 @@
     </section>
     <!-- END TESTIMONIALS -->
 
+
+
+    <!-- START UPCOMING EVENTS (from Eduleb's "BLOG" section) -->
+    <section class="blog_area section-padding">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Upcoming events</h2>
+                <p>Come and meet our pets, support our work, or learn how to care for your new companion.</p>
+            </div>
+            <div class="row">
+
+                <!-- Event 1 -->
+                <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+                    <div class="single_blog hp-event-card">
+                        <img runat="server" src="~/Assets/public/img/happypaws/event-1.jpg" class="img-fluid" alt="HappyPaws Adoption Day" />
+                        <div class="content_box">
+                            <span><i class="fa-regular fa-calendar"></i>14 Nov 2026 | <a runat="server" href="~/Events.aspx">Adoption Day</a></span>
+                            <h2><a runat="server" href="~/Events.aspx">HappyPaws Adoption Day at Port Louis Waterfront</a></h2>
+                            <a runat="server" class="btn_one" href="~/Events.aspx">View Details <i class="ti-arrow-top-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
+                    <div class="single_blog hp-event-card">
+                        <img runat="server" src="~/Assets/public/img/happypaws/event-2.jpg" class="img-fluid" alt="Paws and Pancakes charity breakfast" />
+                        <div class="content_box">
+                            <span><i class="fa-regular fa-calendar"></i>28 Nov 2026 | <a runat="server" href="~/Events.aspx">Fundraiser</a></span>
+                            <h2><a runat="server" href="~/Events.aspx">Paws &amp; Pancakes Charity Breakfast</a></h2>
+                            <a runat="server" class="btn_one" href="~/Events.aspx">View Details <i class="ti-arrow-top-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3: YOUR TURN (see below) -->
+                <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+                    <div class="single_blog hp-event-card">
+                        <img runat="server" src="~/Assets/public/img/happypaws/event-3.jpg" class="img-fluid" alt="Free pet care workshop" />
+                        <div class="content_box">
+                            <span><i class="fa-regular fa-calendar"></i>12 Dec 2026 | <a runat="server" href="~/Events.aspx">Free pet care workshop</a></span>
+                            <h2><a runat="server" href="~/Events.aspx">Caring for Your New Pet: Free Owner Workshop</a></h2>
+                            <a runat="server" class="btn_one" href="~/Events.aspx">View Details <i class="ti-arrow-top-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END UPCOMING EVENTS -->
+
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
     <!-- Owl Carousel: only this page needs it -->
