@@ -219,6 +219,7 @@
     <Content Include="Assets\public\img\fb.svg" />
     <Content Include="Assets\public\img\free-course.png" />
     <Content Include="Assets\public\img\google-play.jpg" />
+    <Content Include="Assets\public\img\happypaws\hero-pet.jpg" />
     <Content Include="Assets\public\img\home-img1.png" />
     <Content Include="Assets\public\img\home-img2.png" />
     <Content Include="Assets\public\img\ins-details.png" />

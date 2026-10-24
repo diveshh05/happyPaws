@@ -6,3 +6,17 @@
     font-weight: 700;
     text-decoration: none;
 }
+/* Hero photo */
+.hp-hero-img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+/* On phones and tablets, make it shorter so the search card stays visible */
+@media (max-width: 991px) {
+    .hp-hero-img {
+        max-height: 280px;
+        margin-top: 24px;
+    }
+}

@@ -197,7 +197,7 @@
                                 <li><a runat="server" href="~/Catalogue.aspx">Adopt a Pet</a></li>
                                 <li><a runat="server" href="~/Owner/SurrenderRequest.aspx">Surrender a Pet</a></li>
                                 <li><a runat="server" href="~/Events.aspx">Upcoming Events</a></li>
-                                <li><a runat="server" href="~/Member/Testimonials.aspx">Share Your Story</a></li>
+                                <li><a runat="server" href="~/Member/Testimonial.aspx">Share Your Story</a></li>
                             </ul>
                         </div>
                     </div>
