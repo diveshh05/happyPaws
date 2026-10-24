@@ -472,6 +472,27 @@ a:hover {
     margin-bottom: 16px;
 }
 
+/* ---------- Documents page (F4) ---------- */
+/* Checklist of the 4 required documents */
+.hp-checklist li {
+    padding: 6px 0;
+}
+
+.hp-checklist .fa-circle-check {
+    color: #198754; /* green tick = uploaded */
+    margin-right: 8px;
+}
+
+.hp-checklist .fa-circle {
+    color: #bbb; /* grey circle = still needed */
+    margin-right: 8px;
+}
+
+/* Delete link in the documents table */
+.hp-delete {
+    color: #dc3545;
+}
+
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
     .hp-hero-img {

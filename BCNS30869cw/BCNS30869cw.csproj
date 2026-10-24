@@ -289,6 +289,7 @@
     <Content Include="Events.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
+    <Content Include="Owner\Documents.aspx" />
     <Content Include="Owner\SurrenderRequest.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
@@ -360,6 +361,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Owner\Documents.aspx.cs">
+      <DependentUpon>Documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Owner\Documents.aspx.designer.cs">
+      <DependentUpon>Documents.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Owner\SurrenderRequest.aspx.cs">
       <DependentUpon>SurrenderRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -394,6 +402,7 @@
     <Content Include="Assets\public\fonts\themify.eot" />
     <Content Include="Assets\public\fonts\themify.ttf" />
     <Content Include="Assets\public\fonts\themify.woff" />
+    <Content Include="Assets\public\docs\agreement-form.pdf" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
