@@ -309,6 +309,61 @@ section.section-top {
     color: #666;
 }
 
+/* ---------- Pet profile (F13, F14, F17) ---------- */
+/* Main photo: fixed landscape shape, keep the face (not the full width/height of the original) */
+.single_event_single img.hp-profile-img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 20px;
+}
+
+/* Like button (F17): coral outline, filled when the user has liked the pet */
+.hp-like {
+    display: inline-block;
+    border: 2px solid #f26b65;
+    color: #f26b65;
+    border-radius: 30px;
+    padding: 8px 22px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    .hp-like:hover,
+    .hp-like.liked {
+        background: #f26b65;
+        color: #fff;
+    }
+
+.hp-like-count {
+    margin-left: 10px;
+    color: #666;
+}
+
+/* Health tab list */
+.hp-health li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Documents tab table */
+.hp-docs a {
+    margin-right: 12px;
+}
+
+/* "You may also like": small square thumbnails instead of full-size photos */
+.single_rc .rc_img img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/* ---------- Links ---------- */
+a:hover {
+    color: #525fe1;
+}
+
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
     .hp-hero-img {

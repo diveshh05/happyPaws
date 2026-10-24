@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Adopter\AdvancedSearch.aspx" />
+    <Content Include="Adopter\PetProfile.aspx" />
     <Content Include="App_Data\ads.xml" />
     <Content Include="Assets\admin\css\theme.css" />
     <Content Include="Assets\admin\images\avatar\avatar-1.jpg" />
@@ -295,6 +296,13 @@
     </Compile>
     <Compile Include="Adopter\AdvancedSearch.aspx.designer.cs">
       <DependentUpon>AdvancedSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adopter\PetProfile.aspx.cs">
+      <DependentUpon>PetProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adopter\PetProfile.aspx.designer.cs">
+      <DependentUpon>PetProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Catalogue.aspx.cs">
       <DependentUpon>Catalogue.aspx</DependentUpon>
