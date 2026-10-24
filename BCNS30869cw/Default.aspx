@@ -73,7 +73,7 @@
 
                 <!-- Right: hero photo (replaces Eduleb's demo image and fake "4500+ students" box) -->
                 <div class="col-lg-6 col-sm-12 col-xs-12">
-                    <div">
+                    <div>
                         <img runat="server" src="~/Assets/public/img/happypaws/hero-pet.jpg" class="img-fluid rounded-4 hp-hero-img" alt="A happy rescued pet" />
                     </div>
                 </div>
@@ -141,7 +141,7 @@
     </section>
     <!-- END HOW IT WORKS -->
 
-        <!-- START FEATURED PETS (from Eduleb's "COURSE" section) -->
+    <!-- START FEATURED PETS (from Eduleb's "COURSE" section) -->
     <section class="home_course section-padding">
         <div class="container">
 
@@ -149,7 +149,9 @@
             <div class="row">
                 <div class="col-lg-8 col-sm-6 col-xs-12">
                     <div class="section-title">
-                        <h2>Meet some of our <b>rescued friends</b> <br />waiting for a home</h2>
+                        <h2>Meet some of our <b>rescued friends</b>
+                            <br />
+                            waiting for a home</h2>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 col-xs-12">
@@ -170,9 +172,9 @@
                             <span>Dog</span>
                         </div>
                         <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Luna</a></h4>
-                        <p><i class="fa-solid fa-paw"></i> Labrador mix</p>
-                        <p><i class="fa-solid fa-cake-candles"></i> 2 years</p>
-                        <p><i class="fa-solid fa-venus"></i> Female</p>
+                        <p><i class="fa-solid fa-paw"></i>Labrador mix</p>
+                        <p><i class="fa-solid fa-cake-candles"></i>2 years</p>
+                        <p><i class="fa-solid fa-venus"></i>Female</p>
                         <div class="price">Available for adoption</div>
                     </div>
                 </div>
@@ -185,9 +187,9 @@
                             <span>Cat</span>
                         </div>
                         <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Milo</a></h4>
-                        <p><i class="fa-solid fa-paw"></i> Domestic shorthair</p>
-                        <p><i class="fa-solid fa-cake-candles"></i> 1 year</p>
-                        <p><i class="fa-solid fa-mars"></i> Male</p>
+                        <p><i class="fa-solid fa-paw"></i>Domestic shorthair</p>
+                        <p><i class="fa-solid fa-cake-candles"></i>1 year</p>
+                        <p><i class="fa-solid fa-mars"></i>Male</p>
                         <div class="price">Available for adoption</div>
                     </div>
                 </div>
@@ -200,9 +202,9 @@
                             <span>Rabbit</span>
                         </div>
                         <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Coco</a></h4>
-                        <p><i class="fa-solid fa-paw"></i> Holland Lop</p>
-                        <p><i class="fa-solid fa-cake-candles"></i> 6 months</p>
-                        <p><i class="fa-solid fa-venus"></i> Female</p>
+                        <p><i class="fa-solid fa-paw"></i>Holland Lop</p>
+                        <p><i class="fa-solid fa-cake-candles"></i>6 months</p>
+                        <p><i class="fa-solid fa-venus"></i>Female</p>
                         <div class="price">Available for adoption</div>
                     </div>
                 </div>
@@ -211,7 +213,7 @@
         </div>
     </section>
     <!-- END FEATURED PETS -->
-        <!-- START ADVERTISEMENT (F32): a random ad from App_Data/Ads.xml on every page load -->
+    <!-- START ADVERTISEMENT (F32): a random ad from App_Data/Ads.xml on every page load -->
     <section class="section-padding pt-0">
         <div class="container">
             <p class="hp-ad-label">Sponsored</p>
@@ -221,4 +223,93 @@
         </div>
     </section>
     <!-- END ADVERTISEMENT -->
+
+    <!-- START TESTIMONIALS (from Eduleb's testimonial slider) -->
+    <section class="testi_area hp-testi section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Stories from our
+                    <br />
+                    HappyPaws family</h2>
+            </div>
+            <div class="row align-items-center">
+
+                <!-- Left: photo -->
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <img runat="server" src="~/Assets/public/img/happypaws/testimonial-side.jpg" class="hp-testi-img" alt="A happy adopter with their pet" />
+                </div>
+
+                <!-- Right: the slider. Each <div class="testimonial"> is one slide -->
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial">
+                            <i class="fa-solid fa-quote-left hp-quote"></i>
+                            <div class="testimonial_content">
+                                <p>We adopted Bella last spring and she has filled our home with joy. The HappyPaws team made the whole process easy and answered every question we had.</p>
+                            </div>
+                            <div class="testi_pic_title">
+                                <span class="hp-avatar">P</span>
+                                <h4>Priya R.</h4>
+                                <p>Adopted Bella the Labrador</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial">
+                            <i class="fa-solid fa-quote-left hp-quote"></i>
+                            <div class="testimonial_content">
+                                <p>Moving abroad meant I could not keep my cat. HappyPaws treated Tiger with so much care and kept me updated until he found a new family.</p>
+                            </div>
+                            <div class="testi_pic_title">
+                                <span class="hp-avatar">K</span>
+                                <h4>Kevin L.</h4>
+                                <p>Surrendered his cat, Tiger</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3: YOUR TURN (see below) -->
+
+                        <div class="testimonial">
+                            <i class="fa-solid fa-quote-left hp-quote"></i>
+                            <div class="testimonial_content">
+                                <p>I couldn't give Coco the space she needed after my baby was born. The HappyPaws team was kind, never judged me, and let me know when she was settled with her new family.</p>
+                            </div>
+                            <div class="testi_pic_title">
+                                <span class="hp-avatar">S</span>
+                                <h4>Sarah M.</h4>
+                                <p>Surrendered her rabbit, Coco</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END TESTIMONIALS -->
+
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
+    <!-- Owl Carousel: only this page needs it -->
+    <script src="<%: ResolveUrl("~/Assets/public/owlcarousel/js/owl.carousel.min.js") %>"></script>
+    <script>
+// Turn the testimonial list into a slider (settings copied from Eduleb's scripts.js)
+$(function () {
+    $("#testimonial-slider").owlCarousel({
+        items: 1,                     // show 1 testimonial at a time
+        itemsDesktop: [1000, 1],      // ...on every screen size
+        itemsDesktopSmall: [980, 1],
+        itemsTablet: [768, 1],
+        itemsMobile: [650, 1],
+        pagination: true,             // dots under the slider
+        navigation: false,             // previous/next arrows
+       
+        slideSpeed: 1000,             // slide animation lasts 1 second
+        autoPlay: 6000                // move to the next slide every 6 seconds
+    });
+});
+    </script>
 </asp:Content>

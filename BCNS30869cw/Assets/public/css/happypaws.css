@@ -70,6 +70,86 @@ section.hp-hero {
     color: #888;
     margin-bottom: 8px;
 }
+/* ---------- Testimonials ---------- */
+/* Cream background instead of Eduleb's decorative shape image */
+section.hp-testi {
+    background: #fdf6ee;
+}
+
+/* Left photo: square, cropped neatly, rounded corners */
+.hp-testi-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/* Quote icon (replaces Eduleb's quote.png) */
+.hp-quote {
+    display: block;
+    font-size: 40px;
+    color: #525fe1;
+    margin-bottom: 20px;
+}
+
+/* Initial-letter circle (replaces the person's photo) */
+.hp-avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background: #525fe1;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------- Testimonial slider dots ----------
+   Eduleb positions the controls on top of the card (style.css line 1916)
+   and owl.theme.css styles the dots with 3-class selectors,
+   so our selectors use 4+ classes to win. */
+
+/* The box holding the dots: sit normally UNDER the slider */
+.hp-testi .owl-carousel.owl-theme .owl-controls {
+    position: relative; /* back in the normal flow of the page */
+    top: auto; /* cancel Eduleb's top: 84% */
+    height: auto;
+    margin-top: 25px; /* space between the card and the dots */
+    text-align: center;
+}
+
+/* Each dot */
+.hp-testi .owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+
+    .hp-testi .owl-theme .owl-controls .owl-page span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background: #c9cdf6; /* light purple for inactive dots */
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    /* The dot for the slide currently showing */
+    .hp-testi .owl-theme .owl-controls .owl-page.active span {
+        background: #525fe1; /* Eduleb's purple */
+    }
+
+/* Eduleb hides the controls on small screens with !important; show them again */
+@media (max-width: 768px) {
+    .hp-testi .owl-carousel.owl-theme .owl-controls {
+        display: block !important;
+    }
+}
 
 
 /* On phones and tablets, make the photo shorter so the search card stays visible */
