@@ -590,20 +590,40 @@ a:hover {
     transition: 0.3s;
 }
 
-    .hp-btn-sm:hover {
-        background: #525fe1;
-        color: #fff;
+.hp-btn-sm:hover {
+    background: #525fe1;
+    color: #fff;
     }
 
-    .hp-btn-sm.danger {
-        border-color: #dc3545;
-        color: #dc3545;
+.hp-btn-sm.danger {
+    border-color: #dc3545;
+    color: #dc3545;
     }
 
-        .hp-btn-sm.danger:hover {
-            background: #dc3545;
-            color: #fff;
-        }
+.hp-btn-sm.danger:hover {
+    background: #dc3545;
+    color: #fff;
+ }
+
+/* ---------- Testimonial page (F18) ---------- */
+/* Character counter under the story box */
+.hp-counter {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #777;
+    margin-top: -22px; /* sit right under the box (Eduleb's 30px bottom margin) */
+    margin-bottom: 20px;
+}
+
+/* Preview card in the side panel: a white card like a home-page slide */
+.hp-preview {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    overflow: hidden; /* contains the floated initials circle */
+}
+
 
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {

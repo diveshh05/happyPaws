@@ -292,6 +292,7 @@
     <Content Include="Events.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
+    <Content Include="Member\Testimonial.aspx" />
     <Content Include="Owner\Documents.aspx" />
     <Content Include="Owner\MyRequests.aspx" />
     <Content Include="Owner\SurrenderRequest.aspx" />
@@ -364,6 +365,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\Testimonial.aspx.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\Testimonial.aspx.designer.cs">
+      <DependentUpon>Testimonial.aspx</DependentUpon>
     </Compile>
     <Compile Include="Owner\Documents.aspx.cs">
       <DependentUpon>Documents.aspx</DependentUpon>
