@@ -291,9 +291,6 @@
     </section>
     <!-- END TESTIMONIALS -->
 
-
-
-    <!-- START UPCOMING EVENTS (from Eduleb's "BLOG" section) -->
     <section class="blog_area section-padding">
         <div class="container">
             <div class="section-title text-center">
@@ -326,7 +323,7 @@
                     </div>
                 </div>
 
-                <!-- Event 3: YOUR TURN (see below) -->
+                <!-- Event 3 -->
                 <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-3.jpg" class="img-fluid" alt="Free pet care workshop" />

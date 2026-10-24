@@ -159,6 +159,20 @@ section.hp-testi {
 }
 
 
+/* ---------- Page banner on inner pages (Eduleb's .section-top) ---------- */
+/* Our cream colour instead of the demo image; less top space because our menu sits above it */
+section.section-top {
+    background: #fdf6ee;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+/* Gap between the icon and the text on pet cards
+   (Visual Studio's auto-format can remove the space in the HTML) */
+.hp-pet-card p i {
+    margin-right: 6px;
+}
+
+
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
     .hp-hero-img {

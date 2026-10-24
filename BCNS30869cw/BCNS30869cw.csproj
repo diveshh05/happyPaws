@@ -230,6 +230,9 @@
     <Content Include="Assets\public\img\happypaws\pet-1.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-2.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-3.jpg" />
+    <Content Include="Assets\public\img\happypaws\pet-4.jpg" />
+    <Content Include="Assets\public\img\happypaws\pet-5.jpg" />
+    <Content Include="Assets\public\img\happypaws\pet-6.jpg" />
     <Content Include="Assets\public\img\happypaws\testimonial-side.jpg" />
     <Content Include="Assets\public\img\home-img1.png" />
     <Content Include="Assets\public\img\home-img2.png" />
@@ -272,11 +275,19 @@
     <Content Include="Assets\public\owlcarousel\css\owl.transitions.css" />
     <Content Include="Assets\public\owlcarousel\js\owl.carousel.js" />
     <Content Include="Assets\public\owlcarousel\js\owl.carousel.min.js" />
+    <Content Include="Catalogue.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catalogue.aspx.cs">
+      <DependentUpon>Catalogue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogue.aspx.designer.cs">
+      <DependentUpon>Catalogue.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
