@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Adopter\AdvancedSearch.aspx" />
     <Content Include="App_Data\ads.xml" />
     <Content Include="Assets\admin\css\theme.css" />
     <Content Include="Assets\admin\images\avatar\avatar-1.jpg" />
@@ -288,6 +289,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adopter\AdvancedSearch.aspx.cs">
+      <DependentUpon>AdvancedSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adopter\AdvancedSearch.aspx.designer.cs">
+      <DependentUpon>AdvancedSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Catalogue.aspx.cs">
       <DependentUpon>Catalogue.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
