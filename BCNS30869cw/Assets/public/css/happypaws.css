@@ -394,6 +394,35 @@ a:hover {
         margin-right: 8px;
     }
 
+/* ---------- Generic white card (tables on My Applications, My Requests, etc.) ---------- */
+.hp-card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Small square pet photo inside table rows */
+.hp-thumb {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 12px;
+}
+
+/* Table header in the template's dark blue */
+.hp-table thead th {
+    color: #1a2d62;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Status legend under the table */
+.hp-legend .badge {
+    margin-right: 6px;
+}
+
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
     .hp-hero-img {
