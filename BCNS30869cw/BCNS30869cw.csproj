@@ -220,6 +220,9 @@
     <Content Include="Assets\public\img\free-course.png" />
     <Content Include="Assets\public\img\google-play.jpg" />
     <Content Include="Assets\public\img\happypaws\hero-pet.jpg" />
+    <Content Include="Assets\public\img\happypaws\pet-1.jpg" />
+    <Content Include="Assets\public\img\happypaws\pet-2.jpg" />
+    <Content Include="Assets\public\img\happypaws\pet-3.jpg" />
     <Content Include="Assets\public\img\home-img1.png" />
     <Content Include="Assets\public\img\home-img2.png" />
     <Content Include="Assets\public\img\ins-details.png" />

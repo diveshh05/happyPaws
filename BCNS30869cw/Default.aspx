@@ -141,4 +141,74 @@
     </section>
     <!-- END HOW IT WORKS -->
 
+        <!-- START FEATURED PETS (from Eduleb's "COURSE" section) -->
+    <section class="home_course section-padding">
+        <div class="container">
+
+            <!-- Heading + "View All Pets" button -->
+            <div class="row">
+                <div class="col-lg-8 col-sm-6 col-xs-12">
+                    <div class="section-title">
+                        <h2>Meet some of our <b>rescued friends</b> <br />waiting for a home</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="cour_btn">
+                        <a runat="server" href="~/Catalogue.aspx" class="btn_one">View All Pets <i class="ti-arrow-top-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pet cards -->
+            <div class="row">
+
+                <!-- Pet card 1 -->
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single_course hp-pet-card">
+                        <div class="single_c_img">
+                            <img runat="server" src="~/Assets/public/img/happypaws/pet-1.jpg" class="img-fluid" alt="Luna, a rescued dog" />
+                            <span>Dog</span>
+                        </div>
+                        <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Luna</a></h4>
+                        <p><i class="fa-solid fa-paw"></i> Labrador mix</p>
+                        <p><i class="fa-solid fa-cake-candles"></i> 2 years</p>
+                        <p><i class="fa-solid fa-venus"></i> Female</p>
+                        <div class="price">Available for adoption</div>
+                    </div>
+                </div>
+
+                <!-- Pet card 2 -->
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single_course hp-pet-card">
+                        <div class="single_c_img">
+                            <img runat="server" src="~/Assets/public/img/happypaws/pet-2.jpg" class="img-fluid" alt="Milo, a rescued cat" />
+                            <span>Cat</span>
+                        </div>
+                        <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Milo</a></h4>
+                        <p><i class="fa-solid fa-paw"></i> Domestic shorthair</p>
+                        <p><i class="fa-solid fa-cake-candles"></i> 1 year</p>
+                        <p><i class="fa-solid fa-mars"></i> Male</p>
+                        <div class="price">Available for adoption</div>
+                    </div>
+                </div>
+
+                <!-- Pet card 3 -->
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single_course hp-pet-card">
+                        <div class="single_c_img">
+                            <img runat="server" src="~/Assets/public/img/happypaws/pet-3.jpg" class="img-fluid" alt="Coco, a rescued rabbit" />
+                            <span>Rabbit</span>
+                        </div>
+                        <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Coco</a></h4>
+                        <p><i class="fa-solid fa-paw"></i> Holland Lop</p>
+                        <p><i class="fa-solid fa-cake-candles"></i> 6 months</p>
+                        <p><i class="fa-solid fa-venus"></i> Female</p>
+                        <div class="price">Available for adoption</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END FEATURED PETS -->
 </asp:Content>
