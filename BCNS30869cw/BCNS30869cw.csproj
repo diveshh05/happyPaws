@@ -242,6 +242,9 @@
     <Content Include="Assets\public\img\happypaws\pet-4.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-5.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-6.jpg" />
+    <Content Include="Assets\public\img\happypaws\request-1.jpg" />
+    <Content Include="Assets\public\img\happypaws\request-2.jpg" />
+    <Content Include="Assets\public\img\happypaws\request-3.jpg" />
     <Content Include="Assets\public\img\happypaws\testimonial-side.jpg" />
     <Content Include="Assets\public\img\home-img1.png" />
     <Content Include="Assets\public\img\home-img2.png" />
@@ -290,6 +293,7 @@
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
     <Content Include="Owner\Documents.aspx" />
+    <Content Include="Owner\MyRequests.aspx" />
     <Content Include="Owner\SurrenderRequest.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Web.config" />
@@ -367,6 +371,13 @@
     </Compile>
     <Compile Include="Owner\Documents.aspx.designer.cs">
       <DependentUpon>Documents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\MyRequests.aspx.cs">
+      <DependentUpon>MyRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Owner\MyRequests.aspx.designer.cs">
+      <DependentUpon>MyRequests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Owner\SurrenderRequest.aspx.cs">
       <DependentUpon>SurrenderRequest.aspx</DependentUpon>
