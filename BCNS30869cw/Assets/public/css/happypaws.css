@@ -423,6 +423,55 @@ a:hover {
     margin-right: 6px;
 }
 
+/* ---------- Profile page (F10) ---------- */
+/* Success message (green), the counterpart of .hp-error */
+.hp-success {
+    display: block;
+    color: #198754;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Read-only email box: looks faded so users can tell it cannot be changed */
+.contact input[readonly] {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Bigger initials circle for the profile panel (re-uses .hp-avatar from the testimonials) */
+.hp-avatar-lg {
+    float: none;
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    margin: 0 auto 12px;
+}
+
+/* ---------- Surrender request (F2, F3) ---------- */
+/* File upload box: Eduleb's ".contact input" makes it 70px tall; let it size naturally */
+.contact input[type="file"] {
+    height: auto;
+    padding: 20px;
+}
+
+/* Small grey help text under a field */
+.hp-hint {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-top: -22px;     /* pull it up under the box (Eduleb's inputs have a 30px bottom margin) */
+    margin-bottom: 20px;
+}
+
+/* Current photo preview when editing a request (F3) */
+.hp-current-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
     .hp-hero-img {

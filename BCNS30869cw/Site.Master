@@ -57,7 +57,7 @@
                                 <li><a runat="server" href="~/Events.aspx">Events</a></li>
 
                                 <!-- Only Adopters see this (switched on by C# after login) -->
-                                <asp:PlaceHolder ID="phAdopterMenu" runat="server" Visible="false">
+                                <asp:PlaceHolder ID="phAdopterMenu" runat="server" Visible="false"> <!-- -->
                                     <li class="menu-item-has-children"><a href="#">Adopt</a>
                                         <ul>
                                             <li><a runat="server" href="~/Adopter/AdvancedSearch.aspx">Advanced Search</a></li>
@@ -86,13 +86,13 @@
                     <!-- Right side buttons (desktop only: d-none hides it, d-xl-block shows it on large screens) -->
                     <div class="col-20 d-none d-xl-block text-end align-self-center">
                         <!-- Guests -->
-                        <asp:PlaceHolder ID="phGuestButtons" runat="server">
+                        <asp:PlaceHolder ID="phGuestButtons" runat="server"> <!-- -->
                             <a runat="server" href="~/Login.aspx" class="header-btn">Sign In</a>
                             <a runat="server" href="~/Register.aspx" class="btn_one">Register</a>
                         </asp:PlaceHolder>
                         <!-- Logged-in members: greeting (F31) and sign out (F29) -->
-                        <asp:PlaceHolder ID="phMemberButtons" runat="server" Visible="false">
-                            <asp:Label ID="lblGreeting" runat="server" CssClass="me-3" Text="Hi, Guest" />
+                        <asp:PlaceHolder ID="phMemberButtons" runat="server" Visible="false"> <!-- -->
+                            <asp:Label ID="lblGreeting" runat="server" CssClass="me-3" Text="Hi, Guest" /> <!-- -->
                             <asp:LinkButton ID="btnSignOut" runat="server" CssClass="btn_one" CausesValidation="false">Sign Out</asp:LinkButton>
                         </asp:PlaceHolder>
                     </div>
