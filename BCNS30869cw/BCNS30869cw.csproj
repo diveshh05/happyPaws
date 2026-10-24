@@ -144,6 +144,7 @@
     <Content Include="Assets\public\bootstrap\css\bootstrap.min.css" />
     <Content Include="Assets\public\bootstrap\js\bootstrap.min.js" />
     <Content Include="Assets\public\css\animate.css" />
+    <Content Include="Assets\public\css\happypaws.css" />
     <Content Include="Assets\public\css\jquery-simple-mobilemenu.css" />
     <Content Include="Assets\public\css\magnific-popup.css" />
     <Content Include="Assets\public\css\style.css" />
@@ -251,6 +252,7 @@
     <Content Include="Assets\public\js\modernizr-2.8.3.min.js" />
     <Content Include="Assets\public\js\scripts.js" />
     <Content Include="Assets\public\js\scrolltopcontrol.js" />
+    <Content Include="Assets\public\js\site.js" />
     <Content Include="Assets\public\js\superMarquee.min.js" />
     <Content Include="Assets\public\js\wow.min.js" />
     <Content Include="Assets\public\owlcarousel\css\owl.carousel.css" />
