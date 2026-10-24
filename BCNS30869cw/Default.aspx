@@ -211,4 +211,14 @@
         </div>
     </section>
     <!-- END FEATURED PETS -->
+        <!-- START ADVERTISEMENT (F32): a random ad from App_Data/Ads.xml on every page load -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <p class="hp-ad-label">Sponsored</p>
+            <div class="hp-ad">
+                <asp:AdRotator ID="adBanner" runat="server" AdvertisementFile="~/App_Data/Ads.xml" />
+            </div>
+        </div>
+    </section>
+    <!-- END ADVERTISEMENT -->
 </asp:Content>

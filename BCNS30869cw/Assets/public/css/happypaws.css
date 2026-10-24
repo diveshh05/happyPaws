@@ -54,6 +54,23 @@ section.hp-hero {
     left: 0; /* stick to the photo's left edge */
     padding: 10px 2px; /* space at the ends of the word, thin on the sides */
 }
+/* ---------- Advertisement banner (F32) ---------- */
+.hp-ad img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 1; /* matches the 1200 x 300 banners */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hp-ad-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
 
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {

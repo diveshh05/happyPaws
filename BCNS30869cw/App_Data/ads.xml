@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- HappyPaws advertisements (F32). The AdRotator picks one at random on each page load. -->
+<Advertisements>
+
+	<!-- Ad 1: links to the Events page; shown most often (50) -->
+	<Ad>
+		<ImageUrl>~/Assets/public/img/happypaws/ads/ad-adoption-day.jpg</ImageUrl>
+		<NavigateUrl>~/Events.aspx</NavigateUrl>
+		<AlternateText>HappyPaws Adoption Day this Saturday - meet our pets</AlternateText>
+		<Impressions>50</Impressions>
+	</Ad>
+
+	<!-- Ad 2: a sponsor; no NavigateUrl, so it is not clickable -->
+	<Ad>
+		<ImageUrl>~/Assets/public/img/happypaws/ads/ad-sponsor.jpg</ImageUrl>
+		<AlternateText>PetPantry Mauritius - proud HappyPaws sponsor</AlternateText>
+		<Impressions>30</Impressions>
+	</Ad>
+
+	<!-- Ad 3: YOUR TURN (see below) -->
+	<Ad>
+		<ImageUrl>~/Assets/public/img/happypaws/ads/ad-register.jpg</ImageUrl>
+		<NavigateUrl>~/Register.aspx</NavigateUrl>
+		<AlternateText>Ready to adopt? Create your free HappyPaws account</AlternateText>
+		<Impressions>20</Impressions>
+	</Ad>
+
+</Advertisements>

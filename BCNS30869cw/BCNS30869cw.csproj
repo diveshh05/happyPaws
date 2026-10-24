@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ads.xml" />
     <Content Include="Assets\admin\css\theme.css" />
     <Content Include="Assets\admin\images\avatar\avatar-1.jpg" />
     <Content Include="Assets\admin\images\avatar\avatar-10.jpg" />
@@ -219,6 +220,9 @@
     <Content Include="Assets\public\img\fb.svg" />
     <Content Include="Assets\public\img\free-course.png" />
     <Content Include="Assets\public\img\google-play.jpg" />
+    <Content Include="Assets\public\img\happypaws\ads\ad-adoption-day.jpg" />
+    <Content Include="Assets\public\img\happypaws\ads\ad-register.jpg" />
+    <Content Include="Assets\public\img\happypaws\ads\ad-sponsor.jpg" />
     <Content Include="Assets\public\img\happypaws\hero-pet.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-1.jpg" />
     <Content Include="Assets\public\img\happypaws\pet-2.jpg" />
@@ -309,7 +313,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
