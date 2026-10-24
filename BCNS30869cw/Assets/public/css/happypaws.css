@@ -172,6 +172,36 @@ section.section-top {
     margin-right: 6px;
 }
 
+/* ---------- Events page: event cards with full details ---------- */
+/* Title is plain text here (not a link), so give it the template's link colour */
+.hp-event-card h2 {
+    color: #1a2d62;
+    font-weight: 600;
+}
+
+/* Category next to the date (purple + bold, like Eduleb's category link) */
+.hp-event-cat {
+    color: #525fe1;
+    font-weight: 700;
+}
+
+/* Time and location lines */
+.hp-event-card .hp-event-meta {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+    .hp-event-card .hp-event-meta i {
+        color: #525fe1;
+        margin-right: 6px; /* gap after the icon, even if VS removes the space */
+    }
+
+/* Short description under the time/location */
+.hp-event-card .hp-event-desc {
+    margin-top: 12px;
+}
+
+
 
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
