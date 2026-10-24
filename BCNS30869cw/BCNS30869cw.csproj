@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Adopter\AdoptionForm.aspx" />
     <Content Include="Adopter\AdvancedSearch.aspx" />
     <Content Include="Adopter\PetProfile.aspx" />
     <Content Include="App_Data\ads.xml" />
@@ -290,6 +291,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adopter\AdoptionForm.aspx.cs">
+      <DependentUpon>AdoptionForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adopter\AdoptionForm.aspx.designer.cs">
+      <DependentUpon>AdoptionForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Adopter\AdvancedSearch.aspx.cs">
       <DependentUpon>AdvancedSearch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -364,6 +364,36 @@ a:hover {
     color: #525fe1;
 }
 
+/* ---------- Dropdowns inside .contact forms ---------- */
+/* Eduleb only styles inputs and textareas; make selects match them (style.css lines 2612-2625) */
+.contact select.form-select {
+    background-color: #ebecff; /* background-color only, so Bootstrap's arrow image stays */
+    border: 1px solid #ebecff;
+    border-radius: 0;
+    color: #1a2d62;
+    height: 70px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+/* Section headings inside long forms */
+.hp-form-section {
+    margin: 10px 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ebecff;
+    color: #525fe1;
+}
+
+/* "What happens next" steps in the side panel */
+.hp-steps li {
+    margin-bottom: 10px;
+}
+
+    .hp-steps li i {
+        color: #525fe1;
+        margin-right: 8px;
+    }
+
 /* On phones and tablets, make the photo shorter so the search card stays visible */
 @media (max-width: 991px) {
     .hp-hero-img {
