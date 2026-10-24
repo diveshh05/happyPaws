@@ -1,5 +1,6 @@
 ﻿/* HappyPaws custom styles. Loaded AFTER Eduleb's style.css so these win. */
-.site-logo a {
+.site-logo a,
+.footer-logo{
     font-family: 'Jost', sans-serif;
     font-size: 28px;
     font-weight: 700;

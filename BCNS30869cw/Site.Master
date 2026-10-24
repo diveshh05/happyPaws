@@ -155,6 +155,95 @@
 
         <!-- Step 3c: the footer goes here -->
 
+        <!-- START FOOTER (from Eduleb) -->
+        <div class="footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Column 1: logo, about text, social icons -->
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single_footer">
+                            <a runat="server" href="~/Default.aspx" class="footer-logo"><i class="fa-solid fa-paw"></i>HappyPaws</a>
+                            <p>A non-profit in Mauritius rescuing, caring for and rehoming abandoned and surrendered pets.</p>
+                            <div class="social_profile">
+                                <ul>
+                                    <li><a class="f_facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a class="f_twitter" href="#"><i class="fa-solid fa-x"></i></a></li>
+                                    <li><a class="f_instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: quick links -->
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <div class="single_footer">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a runat="server" href="~/Default.aspx">Home</a></li>
+                                <li><a runat="server" href="~/Catalogue.aspx">Pet Catalogue</a></li>
+                                <li><a runat="server" href="~/Events.aspx">Events</a></li>
+                                <li><a runat="server" href="~/Login.aspx">Sign In</a></li>
+                                <li><a runat="server" href="~/Register.aspx">Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Get Involved (YOUR TURN, see below) -->
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <div class="single_footer">
+                            <h4>Get Involved</h4>
+                            <ul>                  
+                                <li><a runat="server" href="~/Catalogue.aspx">Adopt a Pet</a></li>
+                                <li><a runat="server" href="~/Owner/SurrenderRequest.aspx">Surrender a Pet</a></li>
+                                <li><a runat="server" href="~/Events.aspx">Upcoming Events</a></li>
+                                <li><a runat="server" href="~/Member/Testimonials.aspx">Share Your Story</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: contact details -->
+                    <div class="col-lg-3 col-sm-6 col-xs-12">
+                        <div class="single_footer">
+                            <h4>Contact Us</h4>
+                            <div class="sf_contact">
+                                <span class="ti-map"></span>
+                                <p>Port Louis, Mauritius</p>
+                            </div>
+                            <div class="sf_contact">
+                                <span class="ti-mobile"></span>
+                                <p>+230 000 0000</p>
+                            </div>
+                            <div class="sf_contact">
+                                <span class="ti-email"></span>
+                                <p>contact@happypaws.mu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 5: opening hours (replaces Eduleb's "Download App") -->
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <div class="single_footer">
+                            <h4>Opening Hours</h4>
+                            <p>Mon – Fri: 9:00 – 16:00</p>
+                            <p>Saturday: 9:00 – 12:00</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+
+        <!-- START FOOTER COPYRIGHT: template credit kept (required by the free licence) -->
+        <div class="foot_copy">
+            <div class="footer_copyright">
+                <p>&copy; <%: DateTime.Now.Year %> HappyPaws. Template by <a href="https://bestwpware.com/">Bestwpware</a> • Distributed by <a href="https://themewagon.com">ThemeWagon</a></p>
+            </div>
+        </div>
+        <!-- END FOOTER COPYRIGHT -->
+
     </form>
 
     <!-- Site-wide scripts (needed on every page) -->
