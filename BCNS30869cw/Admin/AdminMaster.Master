@@ -1,0 +1,215 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="BCNS30869cw.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <!-- From Dasher's head-meta.html -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>HappyPaws Admin</title>
+
+    <!-- From Dasher's head-links.html: remember if the sidebar was collapsed (runs before the page draws, so it doesn't flicker) -->
+    <script>
+if (localStorage.getItem('sidebarExpanded') === 'false') {
+    document.documentElement.classList.add('collapsed');
+    document.documentElement.classList.remove('expanded');
+} else {
+    document.documentElement.classList.remove('collapsed');
+    document.documentElement.classList.add('expanded');
+}
+</script>
+
+    <!-- Dasher's font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&display=swap" />
+
+    <!-- Libraries Dasher loads from node_modules (not in the zip): same versions, from the jsDelivr CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" />
+
+    <!-- Dasher's compiled theme (includes Bootstrap 5.3.3 CSS) -->
+    <link rel="stylesheet" href="~/Assets/admin/css/theme.css" />
+    <!-- Our admin styles (last, so they override Dasher) -->
+    <link rel="stylesheet" href="~/Assets/admin/css/admin.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <!-- ========== DESKTOP SIDEBAR (from Dasher's sidebar-collapse.html) ========== -->
+            <div id="miniSidebar">
+                <div class="brand-logo">
+                    <a runat="server" href="~/Admin/Dashboard.aspx" class="d-none d-md-flex align-items-center gap-2 hp-admin-logo">
+                        <i class="ti ti-paw"></i>
+                        <span class="fw-bold fs-4 site-logo-text">HappyPaws</span>
+                    </a>
+                </div>
+                <ul class="navbar-nav flex-column">
+
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/Dashboard.aspx">
+                            <span class="nav-icon"><i class="ti ti-layout-dashboard"></i></span>
+                            <span class="text">Dashboard</span></a>
+                    </li>
+
+                    <!-- Requests -->
+                    <li class="nav-item">
+                        <div class="nav-heading">Requests</div>
+                        <hr class="mx-5 nav-line mb-1" />
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/SurrenderRequests.aspx">
+                            <span class="nav-icon"><i class="ti ti-heart-handshake"></i></span>
+                            <span class="text">Surrender Requests</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/AdoptionApplications.aspx">
+                            <span class="nav-icon"><i class="ti ti-file-description"></i></span>
+                            <span class="text">Adoption Applications</span></a>
+                    </li>
+
+                    <!-- Manage -->
+                    <li class="nav-item">
+                        <div class="nav-heading">Manage</div>
+                        <hr class="mx-5 nav-line mb-1" />
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/Users.aspx">
+                            <span class="nav-icon"><i class="ti ti-users"></i></span>
+                            <span class="text">Users</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/PetTypes.aspx">
+                            <span class="nav-icon"><i class="ti ti-category"></i></span>
+                            <span class="text">Pet Types</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/ManageEvents.aspx">
+                            <span class="nav-icon"><i class="ti ti-calendar-event"></i></span>
+                            <span class="text">Events</span></a>
+                    </li>
+
+                    <!-- Security -->
+                    <li class="nav-item">
+                        <div class="nav-heading">Security</div>
+                        <hr class="mx-5 nav-line mb-1" />
+                    </li>
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/AuditTrail.aspx">
+                            <span class="nav-icon"><i class="ti ti-shield-lock"></i></span>
+                            <span class="text">Audit Trail</span></a>
+                    </li>
+
+                    <!-- Back to the public site -->
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Default.aspx" target="_blank">
+                            <span class="nav-icon"><i class="ti ti-external-link"></i></span>
+                            <span class="text">View Website</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ========== PHONE / TABLET SLIDE-OUT MENU (Dasher's offcanvas) ========== -->
+            <div class="offcanvasNav offcanvas offcanvas-start" tabindex="-1" id="offcanvasAdmin" aria-labelledby="offcanvasAdminLabel">
+                <div class="offcanvas-header">
+                    <a runat="server" href="~/Admin/Dashboard.aspx" class="d-flex align-items-center gap-2 hp-admin-logo">
+                        <i class="ti ti-paw"></i>
+                        <span class="fw-bold fs-4 site-logo-text" id="offcanvasAdminLabel">HappyPaws</span>
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/Dashboard.aspx">
+                            <span class="nav-icon"><i class="ti ti-layout-dashboard"></i></span> <span class="text">Dashboard</span></a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/SurrenderRequests.aspx">
+                            <span class="nav-icon"><i class="ti ti-heart-handshake"></i></span> <span class="text">Surrender Requests</span></a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/AdoptionApplications.aspx">
+                            <span class="nav-icon"><i class="ti ti-file-description"></i></span> <span class="text">Adoption Applications</span></a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/Users.aspx">
+                            <span class="nav-icon"><i class="ti ti-users"></i></span> <span class="text">Users</span></a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/PetTypes.aspx">
+                            <span class="nav-icon"><i class="ti ti-category"></i></span> <span class="text">Pet Types</span></a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/ManageEvents.aspx">
+                            <span class="nav-icon"><i class="ti ti-calendar-event"></i></span> <span class="text">Events</span></a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/AuditTrail.aspx">
+                            <span class="nav-icon"><i class="ti ti-shield-lock"></i></span> <span class="text">Audit Trail</span></a></li>
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Default.aspx" target="_blank">
+                            <span class="nav-icon"><i class="ti ti-external-link"></i></span> <span class="text">View Website</span></a></li>
+                        <li class="nav-item">
+                            <asp:LinkButton ID="btnSignOutMobile" runat="server" CssClass="nav-link" CausesValidation="false">
+                                <span class="nav-icon"><i class="ti ti-logout"></i></span> <span class="text">Sign Out</span>
+                            </asp:LinkButton>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ========== MAIN CONTENT ========== -->
+            <div id="content" class="position-relative h-100">
+
+                <!-- TOP BAR (from Dasher's topbar-second.html) -->
+                <div class="navbar-glass navbar navbar-expand-lg px-0 px-lg-4">
+                    <div class="container-fluid px-lg-0">
+                        <div class="d-flex align-items-center gap-4">
+                            <!-- Phone/tablet: open the slide-out menu -->
+                            <div class="d-block d-lg-none">
+                                <a class="text-inherit" data-bs-toggle="offcanvas" href="#offcanvasAdmin" role="button" aria-controls="offcanvasAdmin" aria-label="Open menu">
+                                    <i class="ti ti-menu-2 fs-3"></i>
+                                </a>
+                            </div>
+                            <!-- Desktop: collapse/expand the sidebar (handled by Dasher's sidebarnav.js) -->
+                            <div class="d-none d-lg-block">
+                                <a class="sidebar-toggle d-flex p-3" href="javascript:void(0)" aria-label="Collapse or expand the sidebar">
+                                    <span class="collapse-mini"><i class="ti ti-arrow-bar-left fs-4"></i></span>
+                                    <span class="collapse-expanded"><i class="ti ti-arrow-bar-right fs-4"></i></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right side: greeting (F31) + sign out (F29) -->
+                        <ul class="list-unstyled d-flex align-items-center mb-0 gap-3">
+                            <li class="d-none d-md-block">
+                                <asp:Label ID="lblAdminGreeting" runat="server" Text="Hi, Admin" CssClass="fw-semibold" />
+                            </li>
+                            <li>
+                                <span class="hp-admin-avatar"><asp:Literal ID="litAdminInitial" runat="server" Text="A" /></span>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="btnSignOut" runat="server" CssClass="btn btn-outline-primary btn-sm" CausesValidation="false">
+                                    <i class="ti ti-logout"></i> Sign Out
+                                </asp:LinkButton>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Each admin page's content goes here -->
+                <div class="custom-container">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+                    <!-- Template credit (from Dasher's scripts.html, kept as the free licence requires) -->
+                    <p class="text-center hp-admin-credit">
+                        &copy; <%: DateTime.Now.Year %> HappyPaws. Template by <a href="https://codescandy.com" target="_blank">CodesCandy</a>.
+                        Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+    <!-- Libraries (Bootstrap bundle includes Popper, needed for Dasher's dropdowns/offcanvas) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.js"></script>
+    <!-- Dasher's own scripts -->
+    <script src="<%: ResolveUrl("~/Assets/admin/js/main.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Assets/admin/js/vendors/sidebarnav.js") %>"></script>
+
+    <!-- Lets an admin page add its own scripts (e.g. charts on the dashboard) -->
+    <asp:ContentPlaceHolder ID="scripts" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>

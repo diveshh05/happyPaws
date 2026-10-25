@@ -67,12 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Adopter\AdoptionForm.aspx" />
     <Content Include="Adopter\AdvancedSearch.aspx" />
     <Content Include="Adopter\MyApplications.aspx" />
     <Content Include="Adopter\PetProfile.aspx" />
     <Content Include="Adopter\Profile.aspx" />
     <Content Include="App_Data\ads.xml" />
+    <Content Include="Assets\admin\css\admin.css" />
     <Content Include="Assets\admin\css\theme.css" />
     <Content Include="Assets\admin\images\avatar\avatar-1.jpg" />
     <Content Include="Assets\admin\images\avatar\avatar-10.jpg" />
@@ -300,6 +302,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Adopter\AdoptionForm.aspx.cs">
       <DependentUpon>AdoptionForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -422,6 +438,7 @@
     <Content Include="Assets\public\fonts\themify.ttf" />
     <Content Include="Assets\public\fonts\themify.woff" />
     <Content Include="Assets\public\docs\agreement-form.pdf" />
+    <Content Include="Admin\AdminMaster.Master" />
     <None Include="packages.config" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">

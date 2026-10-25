@@ -1,0 +1,32 @@
+﻿/* HappyPaws admin styles. Loaded AFTER Dasher's theme.css so these win. */
+
+/* Tabler icon font inside the sidebar: same size as Dasher's 20px SVG icons */
+#miniSidebar .nav-icon .ti,
+.offcanvasNav .nav-icon .ti {
+    font-size: 20px;
+}
+
+/* Paw logo icon */
+.hp-admin-logo .ti {
+    font-size: 28px;
+    color: var(--bs-primary);
+}
+
+/* Initial-letter avatar in the top bar (replaces Dasher's demo photo) */
+.hp-admin-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--bs-primary);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Template credit at the bottom of every admin page */
+.hp-admin-credit {
+    padding: 24px 0;
+    font-size: 14px;
+}
