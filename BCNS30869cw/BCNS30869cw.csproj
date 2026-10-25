@@ -71,6 +71,7 @@
     <Content Include="Admin\AuditTrail.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Admin\ManageEvents.aspx" />
+    <Content Include="Admin\Pets.aspx" />
     <Content Include="Admin\PetTypes.aspx" />
     <Content Include="Admin\SurrenderRequests.aspx" />
     <Content Include="Admin\Users.aspx" />
@@ -342,6 +343,13 @@
     </Compile>
     <Compile Include="Admin\ManageEvents.aspx.designer.cs">
       <DependentUpon>ManageEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pets.aspx.cs">
+      <DependentUpon>Pets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pets.aspx.designer.cs">
+      <DependentUpon>Pets.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\PetTypes.aspx.cs">
       <DependentUpon>PetTypes.aspx</DependentUpon>

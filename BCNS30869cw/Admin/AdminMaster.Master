@@ -1,5 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="BCNS30869cw.Admin.AdminMaster" %>
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
@@ -10,14 +9,14 @@
 
     <!-- From Dasher's head-links.html: remember if the sidebar was collapsed (runs before the page draws, so it doesn't flicker) -->
     <script>
-if (localStorage.getItem('sidebarExpanded') === 'false') {
-    document.documentElement.classList.add('collapsed');
-    document.documentElement.classList.remove('expanded');
-} else {
-    document.documentElement.classList.remove('collapsed');
-    document.documentElement.classList.add('expanded');
-}
-</script>
+        if (localStorage.getItem('sidebarExpanded') === 'false') {
+            document.documentElement.classList.add('collapsed');
+            document.documentElement.classList.remove('expanded');
+        } else {
+            document.documentElement.classList.remove('collapsed');
+            document.documentElement.classList.add('expanded');
+        }
+    </script>
 
     <!-- Dasher's font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,6 +75,12 @@ if (localStorage.getItem('sidebarExpanded') === 'false') {
                         <div class="nav-heading">Manage</div>
                         <hr class="mx-5 nav-line mb-1" />
                     </li>
+                    <!-- NEW: Pets link -->
+                    <li class="nav-item">
+                        <a runat="server" class="nav-link" href="~/Admin/Pets.aspx">
+                            <span class="nav-icon"><i class="ti ti-paw"></i></span>
+                            <span class="text">Pets</span></a>
+                    </li>
                     <li class="nav-item">
                         <a runat="server" class="nav-link" href="~/Admin/Users.aspx">
                             <span class="nav-icon"><i class="ti ti-users"></i></span>
@@ -129,6 +134,9 @@ if (localStorage.getItem('sidebarExpanded') === 'false') {
                             <span class="nav-icon"><i class="ti ti-heart-handshake"></i></span> <span class="text">Surrender Requests</span></a></li>
                         <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/AdoptionApplications.aspx">
                             <span class="nav-icon"><i class="ti ti-file-description"></i></span> <span class="text">Adoption Applications</span></a></li>
+                        <!-- NEW: Pets link -->
+                        <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/Pets.aspx">
+                            <span class="nav-icon"><i class="ti ti-paw"></i></span> <span class="text">Pets</span></a></li>
                         <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/Users.aspx">
                             <span class="nav-icon"><i class="ti ti-users"></i></span> <span class="text">Users</span></a></li>
                         <li class="nav-item"><a runat="server" class="nav-link" href="~/Admin/PetTypes.aspx">
