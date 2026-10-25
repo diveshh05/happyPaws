@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="SurrenderRequests.aspx.cs" Inherits="BCNS30869cw.Admin.SurrenderRequests" %>
+﻿<%@ Page Title="Surrender Requests | HappyPaws Admin" Language="C#" MasterPageFile="~/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="SurrenderRequests.aspx.cs" Inherits="BCNS30869cw.Admin.SurrenderRequests" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
