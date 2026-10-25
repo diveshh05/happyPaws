@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Surrender Request | HappyPaws" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SurrenderRequest.aspx.cs" Inherits="BCNS30869cw.Owner.SurrenderRequest" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -11,8 +12,8 @@
                     <h1>Surrender a Pet</h1>
                     <ul>
                         <li><a runat="server" href="~/Default.aspx">Home</a></li>
-                        <li> / <a runat="server" href="~/Owner/MyRequests.aspx">My Requests</a></li>
-                        <li> / Surrender Request</li>
+                        <li>/ <a runat="server" href="~/Owner/MyRequests.aspx">My Requests</a></li>
+                        <li>/ Surrender Request</li>
                     </ul>
                 </div>
             </div>
@@ -30,7 +31,8 @@
                     <div class="contact">
 
                         <!-- The backend changes this to "Update your request" in edit mode (F3) -->
-                        <h3 class="mb-2"><asp:Literal ID="litFormTitle" runat="server" Text="Tell us about your pet" /></h3>
+                        <h3 class="mb-2">
+                            <asp:Literal ID="litFormTitle" runat="server" Text="Tell us about your pet" /></h3>
                         <p class="mb-4">We understand this is a hard decision. Share as much as you can so we can find the right new home.</p>
 
                         <asp:Label ID="lblMessage" runat="server" CssClass="hp-error mb-3" EnableViewState="false" />
@@ -41,7 +43,9 @@
                         <div class="row">
 
                             <!-- ===== Section 1: About your pet ===== -->
-                            <div class="col-md-12"><h5 class="hp-form-section">1. About your pet</h5></div>
+                            <div class="col-md-12">
+                                <h5 class="hp-form-section">1. About your pet</h5>
+                            </div>
 
                             <!-- Pet name -->
                             <div class="form-group col-md-6">
@@ -131,7 +135,9 @@
                             </div>
 
                             <!-- ===== Section 2: Reason ===== -->
-                            <div class="col-md-12"><h5 class="hp-form-section">2. Reason for surrender</h5></div>
+                            <div class="col-md-12">
+                                <h5 class="hp-form-section">2. Reason for surrender</h5>
+                            </div>
 
                             <!-- Main reason -->
                             <div class="form-group col-md-12">
@@ -161,7 +167,9 @@
                             </div>
 
                             <!-- ===== Section 3: Other details ===== -->
-                            <div class="col-md-12"><h5 class="hp-form-section">3. Other details</h5></div>
+                            <div class="col-md-12">
+                                <h5 class="hp-form-section">3. Other details</h5>
+                            </div>
 
                             <!-- Vaccinated -->
                             <div class="form-group col-md-6">
@@ -178,6 +186,9 @@
                             <div class="form-group col-md-6">
                                 <asp:Label runat="server" AssociatedControlID="txtTemperament" Text="Temperament" />
                                 <asp:TextBox ID="txtTemperament" runat="server" CssClass="form-control" MaxLength="100" placeholder="e.g. calm, friendly with children" />
+                                <asp:RegularExpressionValidator ID="revTemperament" runat="server" ControlToValidate="txtTemperament"
+                                    ValidationExpression="^[A-Za-z\s,\-']{0,100}$"
+                                    ErrorMessage="Letters, spaces, commas, hyphens and apostrophes only." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
                             <!-- Health and special needs -->

@@ -267,6 +267,15 @@ namespace BCNS30869cw.Owner
         protected global::System.Web.UI.WebControls.TextBox txtTemperament;
 
         /// <summary>
+        /// revTemperament control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revTemperament;
+
+        /// <summary>
         /// txtOtherDetails control.
         /// </summary>
         /// <remarks>

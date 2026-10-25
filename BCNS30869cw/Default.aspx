@@ -48,6 +48,9 @@
                             <div class="col-sm-6">
                                 <asp:Label runat="server" AssociatedControlID="txtBreed" Text="Breed" CssClass="form-label" />
                                 <asp:TextBox ID="txtBreed" runat="server" CssClass="form-control" MaxLength="50" placeholder="e.g. Labrador" />
+                                <asp:RegularExpressionValidator ID="revBreed" runat="server" ControlToValidate="txtBreed"
+                                    ValidationExpression="^[A-Za-z\s\-]{0,50}$"
+                                    ErrorMessage="Letters, spaces and hyphens only." CssClass="hp-error" Display="Dynamic" />
                             </div>
 
                             <!-- Size-->
