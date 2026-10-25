@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AdoptionApplications.aspx" />
+    <Content Include="Admin\AuditTrail.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Admin\ManageEvents.aspx" />
     <Content Include="Admin\PetTypes.aspx" />
@@ -320,6 +321,13 @@
     </Compile>
     <Compile Include="Admin\AdoptionApplications.aspx.designer.cs">
       <DependentUpon>AdoptionApplications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AuditTrail.aspx.cs">
+      <DependentUpon>AuditTrail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AuditTrail.aspx.designer.cs">
+      <DependentUpon>AuditTrail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
