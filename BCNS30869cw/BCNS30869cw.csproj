@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Dashboard.aspx" />
+    <Content Include="Admin\SurrenderRequests.aspx" />
     <Content Include="Adopter\AdoptionForm.aspx" />
     <Content Include="Adopter\AdvancedSearch.aspx" />
     <Content Include="Adopter\MyApplications.aspx" />
@@ -315,6 +316,13 @@
     </Compile>
     <Compile Include="Admin\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SurrenderRequests.aspx.cs">
+      <DependentUpon>SurrenderRequests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SurrenderRequests.aspx.designer.cs">
+      <DependentUpon>SurrenderRequests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Adopter\AdoptionForm.aspx.cs">
       <DependentUpon>AdoptionForm.aspx</DependentUpon>

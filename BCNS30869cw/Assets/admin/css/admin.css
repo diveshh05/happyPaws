@@ -30,3 +30,18 @@
     padding: 24px 0;
     font-size: 14px;
 }
+/* Small square photo in admin tables */
+.hp-admin-thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Bigger photo in the review panel */
+.hp-admin-photo {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 12px;
+}
