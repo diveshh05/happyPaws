@@ -1,4 +1,5 @@
-﻿
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="BCNS30869cw.Admin.AdminMaster" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">

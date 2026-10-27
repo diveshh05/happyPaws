@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="~/Assets/public/owlcarousel/css/owl.carousel.css" />
     <link rel="stylesheet" href="~/Assets/public/owlcarousel/css/owl.theme.css" />
     <link rel="stylesheet" href="~/Assets/public/css/jquery-simple-mobilemenu.css" />
-    <link rel="stylesheet" href="~/Assets/public/css/happypaws.css" />
+    
     <link rel="stylesheet" href="~/Assets/public/css/animate.css" />
     <!-- Eduleb's main stylesheet (load last so it wins over the others) -->
     <link rel="stylesheet" href="~/Assets/public/css/style.css" />
+    <link rel="stylesheet" href="~/Assets/public/css/happypaws.css" />
 
     <!-- Hole #1: lets a page add its own extra CSS if it needs to -->
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>

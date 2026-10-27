@@ -1,5 +1,6 @@
-     # Template sources
-     - Public site: Eduleb by ThemeWagon (Bootstrap 5.3.2), https://themewagon.com/themes/edulab/
-     - Admin panel: Dasher by CodesCandy, distributed by ThemeWagon (Bootstrap 5.3.3), https://themewagon.com/themes/dasher
+Template sources
+- Public site: Eduleb by ThemeWagon (Bootstrap 5.3.2), https://themewagon.com/themes/edulab/
 
-     # Image credits (Unsplash)
+- Admin panel: Dasher by CodesCandy, distributed by ThemeWagon (Bootstrap 5.3.3), https://themewagon.com/themes/dasher
+
+   
