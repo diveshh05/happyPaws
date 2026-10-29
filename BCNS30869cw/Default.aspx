@@ -4,47 +4,39 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START HERO (from Eduleb's "HOME" section) -->
+    <!--hero -->
     <section class="hp-hero">
         <div class="container">
             <div class="row align-items-center">
 
-                <!-- Left: heading + simple search -->
                 <div class="col-lg-6 col-sm-12 col-xs-12">
                     <div class="hero-text">
                         <h1><span>Adopt, don't shop.</span> Give a rescued pet a second chance</h1>
                         <p>Dogs, cats and other pets in Mauritius are waiting for a loving home.</p>
                     </div>
 
-                    <!-- SIMPLE SEARCH (F8): guests can use it without logging in -->
                     <div class="hp-search">
                         <div class="row g-3">
 
-                            <!-- Pet type -->
                             <div class="col-sm-6">
                                 <asp:Label runat="server" AssociatedControlID="ddlType" Text="Pet type" CssClass="form-label" />
-                                <asp:DropDownList ID="ddlType" runat="server" CssClass="form-select">
+                                <asp:DropDownList ID="ddlType" runat="server" CssClass="form-select"
+                                    AppendDataBoundItems="true" DataTextField="Name" DataValueField="PetTypeId">
                                     <asp:ListItem Value="" Text="Any type" />
-                                    <asp:ListItem Value="Dog" Text="Dog" />
-                                    <asp:ListItem Value="Cat" Text="Cat" />
-                                    <asp:ListItem Value="Rabbit" Text="Rabbit" />
-                                    <asp:ListItem Value="Bird" Text="Bird" />
                                 </asp:DropDownList>
                             </div>
 
-                            <!-- Age -->
                             <div class="col-sm-6">
                                 <asp:Label runat="server" AssociatedControlID="ddlAge" Text="Age" CssClass="form-label" />
                                 <asp:DropDownList ID="ddlAge" runat="server" CssClass="form-select">
                                     <asp:ListItem Value="" Text="Any age" />
-                                    <asp:ListItem Value="0-1" Text="Under 1 year" />
+                                    <asp:ListItem Value="0" Text="Under 1 year" />
                                     <asp:ListItem Value="1-3" Text="1 to 3 years" />
-                                    <asp:ListItem Value="3-7" Text="3 to 7 years" />
-                                    <asp:ListItem Value="7+" Text="Over 7 years" />
+                                    <asp:ListItem Value="4-7" Text="4 to 7 years" />
+                                    <asp:ListItem Value="8+" Text="8 years and over" />
                                 </asp:DropDownList>
                             </div>
 
-                            <!-- Breed -->
                             <div class="col-sm-6">
                                 <asp:Label runat="server" AssociatedControlID="txtBreed" Text="Breed" CssClass="form-label" />
                                 <asp:TextBox ID="txtBreed" runat="server" CssClass="form-control" MaxLength="50" placeholder="e.g. Labrador" />
@@ -52,9 +44,6 @@
                                     ValidationExpression="^[A-Za-z\s\-]{0,50}$"
                                     ErrorMessage="Letters, spaces and hyphens only." CssClass="hp-error" Display="Dynamic" />
                             </div>
-
-                            <!-- Size-->
-
 
                             <div class="col-sm-6">
                                 <asp:Label runat="server" AssociatedControlID="ddlSize" Text="Size" CssClass="form-label" />
@@ -66,7 +55,7 @@
                                 </asp:DropDownList>
                             </div>
 
-                            <!-- Search button (no OnClick yet; the backend will add it) -->
+                            <!-- Search button -->
                             <div class="col-12">
                                 <asp:Button ID="btnSearch" runat="server" Text="Search Pets" CssClass="btn_one w-100 border-0" />
                             </div>
@@ -74,7 +63,6 @@
                     </div>
                 </div>
 
-                <!-- Right: hero photo (replaces Eduleb's demo image and fake "4500+ students" box) -->
                 <div class="col-lg-6 col-sm-12 col-xs-12">
                     <div>
                         <img runat="server" src="~/Assets/public/img/happypaws/hero-pet.jpg" class="img-fluid rounded-4 hp-hero-img" alt="A happy rescued pet" />
@@ -84,8 +72,7 @@
             </div>
         </div>
     </section>
-    <!-- END HERO -->
-    <!-- START HOW IT WORKS (from Eduleb's "Start your journey" section) -->
+
     <section class="top_cat__area section-padding">
         <div class="container">
             <div class="section-title text-center">
@@ -94,7 +81,6 @@
             </div>
             <div class="row">
 
-                <!-- Step 01 -->
                 <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
                     <div class="single_tp">
                         <span class="sc_one">01</span>
@@ -105,7 +91,6 @@
                     </div>
                 </div>
 
-                <!-- Step 02 -->
                 <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
                     <div class="single_tp">
                         <span class="sc_two">02</span>
@@ -116,7 +101,6 @@
                     </div>
                 </div>
 
-                <!-- Step 03 -->
                 <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="single_tp">
                         <span class="sc_three">03</span>
@@ -126,8 +110,6 @@
                         <p>Fill in a short adoption form telling us about your home and your space.</p>
                     </div>
                 </div>
-
-                <!-- Step 04: YOUR TURN (see below) -->
 
                 <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
                     <div class="single_tp">
@@ -142,13 +124,11 @@
             </div>
         </div>
     </section>
-    <!-- END HOW IT WORKS -->
 
-    <!-- START FEATURED PETS (from Eduleb's "COURSE" section) -->
+    <!-- pets -->
     <section class="home_course section-padding">
         <div class="container">
 
-            <!-- Heading + "View All Pets" button -->
             <div class="row">
                 <div class="col-lg-8 col-sm-6 col-xs-12">
                     <div class="section-title">
@@ -167,7 +147,6 @@
             <!-- Pet cards -->
             <div class="row">
 
-                <!-- Pet card 1 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -182,7 +161,6 @@
                     </div>
                 </div>
 
-                <!-- Pet card 2 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -197,7 +175,6 @@
                     </div>
                 </div>
 
-                <!-- Pet card 3 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -206,7 +183,7 @@
                         </div>
                         <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Coco</a></h4>
                         <p><i class="fa-solid fa-paw"></i>Holland Lop</p>
-                        <p><i class="fa-solid fa-cake-candles"></i>6 months</p>
+                        <p><i class="fa-solid fa-cake-candles"></i>Under 1 year</p>
                         <p><i class="fa-solid fa-venus"></i>Female</p>
                         <div class="price">Available for adoption</div>
                     </div>
@@ -215,19 +192,18 @@
             </div>
         </div>
     </section>
-    <!-- END FEATURED PETS -->
-    <!-- START ADVERTISEMENT (F32): a random ad from App_Data/Ads.xml on every page load -->
+
+    <!-- ads -->
     <section class="section-padding pt-0">
         <div class="container">
-            <p class="hp-ad-label">Sponsored</p>
+            <p class="hp-ad-label">ads</p>
             <div class="hp-ad">
                 <asp:AdRotator ID="adBanner" runat="server" AdvertisementFile="~/App_Data/Ads.xml" />
             </div>
         </div>
     </section>
-    <!-- END ADVERTISEMENT -->
 
-    <!-- START TESTIMONIALS (from Eduleb's testimonial slider) -->
+    <!--testimonials -->
     <section class="testi_area hp-testi section-padding">
         <div class="container">
             <div class="section-title">
@@ -237,16 +213,14 @@
             </div>
             <div class="row align-items-center">
 
-                <!-- Left: photo -->
                 <div class="col-lg-6 col-sm-12 col-xs-12">
                     <img runat="server" src="~/Assets/public/img/happypaws/testimonial-side.jpg" class="hp-testi-img" alt="A happy adopter with their pet" />
                 </div>
 
-                <!-- Right: the slider. Each <div class="testimonial"> is one slide -->
+                <!-- slider -->
                 <div class="col-lg-6 col-sm-12 col-xs-12">
                     <div id="testimonial-slider" class="owl-carousel">
 
-                        <!-- Testimonial 1 -->
                         <div class="testimonial">
                             <i class="fa-solid fa-quote-left hp-quote"></i>
                             <div class="testimonial_content">
@@ -259,7 +233,6 @@
                             </div>
                         </div>
 
-                        <!-- Testimonial 2 -->
                         <div class="testimonial">
                             <i class="fa-solid fa-quote-left hp-quote"></i>
                             <div class="testimonial_content">
@@ -271,8 +244,6 @@
                                 <p>Surrendered his cat, Tiger</p>
                             </div>
                         </div>
-
-                        <!-- Testimonial 3: YOUR TURN (see below) -->
 
                         <div class="testimonial">
                             <i class="fa-solid fa-quote-left hp-quote"></i>
@@ -292,8 +263,8 @@
             </div>
         </div>
     </section>
-    <!-- END TESTIMONIALS -->
 
+    <!-- event -->
     <section class="blog_area section-padding">
         <div class="container">
             <div class="section-title text-center">
@@ -302,7 +273,6 @@
             </div>
             <div class="row">
 
-                <!-- Event 1 -->
                 <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-1.jpg" class="img-fluid" alt="HappyPaws Adoption Day" />
@@ -314,7 +284,6 @@
                     </div>
                 </div>
 
-                <!-- Event 2 -->
                 <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-2.jpg" class="img-fluid" alt="Paws and Pancakes charity breakfast" />
@@ -326,7 +295,6 @@
                     </div>
                 </div>
 
-                <!-- Event 3 -->
                 <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-3.jpg" class="img-fluid" alt="Free pet care workshop" />
@@ -340,27 +308,23 @@
             </div>
         </div>
     </section>
-    <!-- END UPCOMING EVENTS -->
-
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
-    <!-- Owl Carousel: only this page needs it -->
     <script src="<%: ResolveUrl("~/Assets/public/owlcarousel/js/owl.carousel.min.js") %>"></script>
     <script>
-// Turn the testimonial list into a slider (settings copied from Eduleb's scripts.js)
 $(function () {
     $("#testimonial-slider").owlCarousel({
-        items: 1,                     // show 1 testimonial at a time
-        itemsDesktop: [1000, 1],      // ...on every screen size
+        items: 1,                     
+        itemsDesktop: [1000, 1],      
         itemsDesktopSmall: [980, 1],
         itemsTablet: [768, 1],
         itemsMobile: [650, 1],
-        pagination: true,             // dots under the slider
-        navigation: false,             // previous/next arrows
+        pagination: true,             
+        navigation: false,             
        
-        slideSpeed: 1000,             // slide animation lasts 1 second
-        autoPlay: 6000                // move to the next slide every 6 seconds
+        slideSpeed: 1000,             
+        autoPlay: 6000                
     });
 });
     </script>

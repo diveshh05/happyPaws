@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Pets | HappyPaws Admin" Language="C#" MasterPageFile="~/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Pets.aspx.cs" Inherits="BCNS30869cw.Admin.Pets" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -20,12 +21,9 @@
             <div class="row g-3 align-items-end">
                 <div class="col-md-3">
                     <asp:Label runat="server" AssociatedControlID="ddlTypeFilter" Text="Type" CssClass="form-label" />
-                    <asp:DropDownList ID="ddlTypeFilter" runat="server" CssClass="form-select">
+                    <asp:DropDownList ID="ddlTypeFilter" runat="server" CssClass="form-select"
+                        AppendDataBoundItems="true" DataTextField="Name" DataValueField="PetTypeId">
                         <asp:ListItem Value="" Text="All types" />
-                        <asp:ListItem Value="Dog" Text="Dog" />
-                        <asp:ListItem Value="Cat" Text="Cat" />
-                        <asp:ListItem Value="Rabbit" Text="Rabbit" />
-                        <asp:ListItem Value="Bird" Text="Bird" />
                     </asp:DropDownList>
                 </div>
                 <div class="col-md-3">
@@ -77,7 +75,7 @@
                             </div>
                         </td>
                         <td>2 years · Female</td>
-                        <td><i class="ti ti-check text-success"></i> Yes</td>
+                        <td><i class="ti ti-check text-success"></i>Yes</td>
                         <td>12</td>
                         <td><span class="badge text-primary-emphasis bg-primary-subtle">Featured</span></td>
                         <td><span class="badge text-success-emphasis bg-success-subtle">Available</span></td>
@@ -97,7 +95,7 @@
                             </div>
                         </td>
                         <td>1 year · Male</td>
-                        <td><i class="ti ti-check text-success"></i> Yes</td>
+                        <td><i class="ti ti-check text-success"></i>Yes</td>
                         <td>8</td>
                         <td><span class="badge text-primary-emphasis bg-primary-subtle">Featured</span></td>
                         <td><span class="badge text-warning-emphasis bg-warning-subtle">Reserved</span></td>
@@ -117,7 +115,7 @@
                             </div>
                         </td>
                         <td>4 years · Male</td>
-                        <td><i class="ti ti-x text-danger"></i> No</td>
+                        <td><i class="ti ti-x text-danger"></i>No</td>
                         <td>5</td>
                         <td><span class="text-secondary small">-</span></td>
                         <td><span class="badge text-success-emphasis bg-success-subtle">Available</span></td>
@@ -137,7 +135,7 @@
                             </div>
                         </td>
                         <td>3 years · Female</td>
-                        <td><i class="ti ti-check"></i> Yes</td>
+                        <td><i class="ti ti-check"></i>Yes</td>
                         <td>21</td>
                         <td>-</td>
                         <td><span class="badge text-secondary-emphasis bg-secondary-subtle">Adopted</span></td>
@@ -201,11 +199,8 @@
 
                             <div class="col-sm-6">
                                 <asp:Label runat="server" AssociatedControlID="ddlType" Text="Type" CssClass="form-label" />
-                                <asp:DropDownList ID="ddlType" runat="server" CssClass="form-select">
-                                    <asp:ListItem Value="Dog" Text="Dog" Selected="True" />
-                                    <asp:ListItem Value="Cat" Text="Cat" />
-                                    <asp:ListItem Value="Rabbit" Text="Rabbit" />
-                                    <asp:ListItem Value="Bird" Text="Bird" />
+                                <asp:DropDownList ID="ddlType" runat="server" CssClass="form-select"
+                                    DataTextField="Name" DataValueField="PetTypeId">
                                 </asp:DropDownList>
                             </div>
 
@@ -291,5 +286,6 @@
         </div>
     </asp:Panel>
 
-</asp:Content><asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
 </asp:Content>

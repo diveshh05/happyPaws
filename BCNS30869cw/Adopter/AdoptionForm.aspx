@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER -->
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -19,14 +18,13 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
 
-    <!-- START ADOPTION FORM (F15) -->
+    <!--Adoption Form -->
     <div class="contact_area section-padding">
         <div class="container">
             <div class="row">
 
-                <!-- ========== LEFT: the form ========== -->
+                <!-- form to fill -->
                 <div class="col-lg-8 col-sm-12 col-xs-12 mb-4">
                     <div class="contact">
                         <h3 class="mb-2">Tell us about your home</h3>
@@ -40,7 +38,7 @@
 
                         <div class="row">
 
-                            <!-- ===== Section 1: Your home ===== -->
+                            <!-- section 1 -->
                             <div class="col-md-12">
                                 <h5 class="hp-form-section">1. Your home</h5>
                             </div>
@@ -82,7 +80,7 @@
                                     ErrorMessage="Please enter a whole number from 0 to 24." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
-                            <!-- ===== Section 2: Your household ===== -->
+                            <!-- Section 2 -->
                             <div class="col-md-12">
                                 <h5 class="hp-form-section">2. Your household</h5>
                             </div>
@@ -131,7 +129,7 @@
                                     ErrorMessage="Please keep this to 300 characters or fewer." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
-                            <!-- ===== Section 3: About you ===== -->
+                            <!-- Section 3 -->
                             <div class="col-md-12">
                                 <h5 class="hp-form-section">3. About you</h5>
                             </div>
@@ -158,7 +156,7 @@
                                     ErrorMessage="Please keep this to 500 characters or fewer." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
-                            <!-- ===== Agreement ===== -->
+                            <!-- Agreement -->
                             <div class="col-md-12 mb-4">
                                 <asp:CheckBox ID="chkAgree" runat="server" CssClass="hp-remember"
                                     Text="I confirm the information above is true and I agree to a home visit by HappyPaws." />
@@ -166,7 +164,6 @@
                                     ErrorMessage="Please tick the box to confirm." CssClass="hp-error" Display="Dynamic" />
                             </div>
 
-                            <!-- Submit (no OnClick yet; the backend will add it) -->
                             <div class="col-md-12">
                                 <asp:Button ID="btnSubmit" runat="server" Text="Submit Application" CssClass="btn_one" />
                             </div>
@@ -174,7 +171,7 @@
                     </div>
                 </div>
 
-                <!-- ========== RIGHT: pet summary + what happens next ========== -->
+                <!-- pet details -->
                 <div class="col-lg-4 col-sm-12 col-xs-12">
                     <div class="hp-side-panel">
                         <p class="mb-2">You are applying to adopt</p>
@@ -196,14 +193,11 @@
             </div>
         </div>
     </div>
-    <!-- END ADOPTION FORM -->
-
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
     <script>
-        // Browser-side check for the agreement checkbox (used by the CustomValidator cvAgree).
-        // ASP.NET renames server control IDs in content pages, so ClientID gives the real ID.
+        
         function validateAgree(sender, args) {
             args.IsValid = document.getElementById('<%= chkAgree.ClientID %>').checked;
         }

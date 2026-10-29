@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER -->
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -18,13 +17,12 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
 
     <section class="home_course section-padding">
         <div class="container">
             <div class="row">
 
-                <!-- LEFT: FILTER PANEL (F12) -->
+                <!-- FILTER PANEL -->
                 <div class="col-lg-4 col-sm-12 mb-4">
                     <div class="hp-filter">
                         <h4 class="mb-3">Filter pets</h4>
@@ -101,10 +99,9 @@
                     </div>
                 </div>
 
-                <!-- RIGHT: LIVE SEARCH + RESULTS -->
+                <!-- Live search -->
                 <div class="col-lg-8 col-sm-12">
 
-                    <!-- LIVE SEARCH (F28): results will update while the user types (backend: AJAX UpdatePanel) -->
                     <div class="hp-live-search mb-2">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <asp:TextBox ID="txtLiveSearch" runat="server" CssClass="form-control" MaxLength="50"
@@ -116,7 +113,6 @@
 
                     <asp:Label ID="lblResultInfo" runat="server" CssClass="d-block mb-4" Text="Showing all pets available for adoption" />
 
-                    <!-- Results (the backend will generate these cards) -->
                     <div class="row">
 
                         <!-- Result 1 -->

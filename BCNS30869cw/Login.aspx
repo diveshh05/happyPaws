@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER -->
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -18,14 +17,11 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
-
-    <!-- START LOGIN (from Eduleb's contact form layout, F19) -->
+    
     <div class="contact_area section-padding">
         <div class="container">
             <div class="row">
 
-                <!-- Left: login form -->
                 <div class="col-lg-7 col-sm-12 col-xs-12 mb-4">
                     <div class="contact">
                         <h3 class="mb-2">Welcome back</h3>
@@ -47,7 +43,7 @@
                                     ErrorMessage="Please enter a valid email address." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
-                            <!-- Password: YOUR TURN (see below) -->
+                            <!-- Password -->
                             <div class="form-group col-md-12 mb-3">
                                 <asp:Label runat="server" AssociatedControlID="txtPassword" Text="Password" />
                                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control" MaxLength="100" />
@@ -55,12 +51,12 @@
                                     ErrorMessage="Please enter your password." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
-                            <!-- Remember me (F19: stored in a cookie by the backend) -->
+                            <!-- Remember me -->
                             <div class="col-md-12 mb-4">
                                 <asp:CheckBox ID="chkRemember" runat="server" Text="Remember me on this device" CssClass="hp-remember" />
                             </div>
 
-                            <!-- Sign in button (no OnClick yet; the backend will add it) -->
+                            <!-- Sign in button -->
                             <div class="col-md-12">
                                 <asp:Button ID="btnLogin" runat="server" Text="Sign In" CssClass="btn_one" />
                             </div>
@@ -72,7 +68,6 @@
                     </div>
                 </div>
 
-                <!-- Right: "New to HappyPaws?" panel (replaces Eduleb's map) -->
                 <div class="col-lg-5 col-sm-12 col-xs-12">
                     <div class="hp-side-panel">
                         <img runat="server" src="~/Assets/public/img/happypaws/login-side.jpg" class="hp-side-img" alt="A rescued pet waiting for a home" />
@@ -85,7 +80,6 @@
             </div>
         </div>
     </div>
-    <!-- END LOGIN -->
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">

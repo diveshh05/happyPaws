@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER (from Eduleb's "SECTION TOP") -->
+    
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -18,13 +18,12 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
 
-    <!-- START CATALOGUE (from Eduleb's course grid, F11) -->
+    <!-- catalogue -->
     <section class="home_course section-padding">
         <div class="container">
 
-            <!-- Results line: the backend will change this text after a search (F8) -->
+            
             <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
                 <asp:Label ID="lblResultInfo" runat="server" Text="Showing all pets available for adoption" />
                 <a runat="server" href="~/Adopter/AdvancedSearch.aspx">Need more filters? Try Advanced Search <i class="ti-arrow-top-right"></i></a>
@@ -32,7 +31,6 @@
 
             <div class="row">
              
-                <!-- Pet card 1 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -47,7 +45,6 @@
                     </div>
                 </div>
 
-                <!-- Pet card 2 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -62,7 +59,6 @@
                     </div>
                 </div>
 
-                <!-- Pet card 3 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -71,13 +67,12 @@
                         </div>
                         <h4><a runat="server" href="~/Adopter/PetProfile.aspx">Coco</a></h4>
                         <p><i class="fa-solid fa-paw"></i>Holland Lop</p>
-                        <p><i class="fa-solid fa-cake-candles"></i>6 months</p>
+                        <p><i class="fa-solid fa-cake-candles"></i>Under 1 year</p>
                         <p><i class="fa-solid fa-venus"></i>Female</p>
                         <div class="price">Available for adoption</div>
                     </div>
                 </div>
 
-                <!-- Pet card 4 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -92,7 +87,6 @@
                     </div>
                 </div>
 
-                <!-- Pet card 5 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -107,7 +101,6 @@
                     </div>
                 </div>
 
-                <!-- Pet card 6 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12">
                     <div class="single_course hp-pet-card">
                         <div class="single_c_img">
@@ -125,7 +118,6 @@
             </div>
         </div>
     </section>
-    <!-- END CATALOGUE -->
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">

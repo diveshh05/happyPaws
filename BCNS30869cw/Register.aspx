@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER -->
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -18,14 +17,12 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
 
-    <!-- START REGISTER (same layout as Login, F1 + F9) -->
+    <!-- Registration form -->
     <div class="contact_area section-padding">
         <div class="container">
             <div class="row">
 
-                <!-- Left: registration form -->
                 <div class="col-lg-7 col-sm-12 col-xs-12 mb-4">
                     <div class="contact">
                         <h3 class="mb-2">Join HappyPaws</h3>
@@ -36,7 +33,7 @@
 
                         <div class="row">
 
-                            <!-- Account type: F1 (Pet Owner) or F9 (Adopter) -->
+                            <!-- Account type -->
                             <div class="form-group col-md-12 mb-3">
                                 <asp:Label runat="server" AssociatedControlID="rblRole" Text="I want to..." />
                                 <asp:RadioButtonList ID="rblRole" runat="server" CssClass="hp-choice d-block"
@@ -117,7 +114,7 @@
                                     Operator="Equal" ErrorMessage="The passwords do not match." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />
                             </div>
 
-                            <!-- Register button (no OnClick yet; the backend will add it) -->
+                            <!-- Register button -->
                             <div class="col-md-12">
                                 <asp:Button ID="btnRegister" runat="server" Text="Create Account" CssClass="btn_one" />
                             </div>
@@ -129,7 +126,6 @@
                     </div>
                 </div>
 
-                <!-- Right: which account to choose (replaces Eduleb's map) -->
                 <div class="col-lg-5 col-sm-12 col-xs-12">
                     <div class="hp-side-panel">
                         <h4 class="mb-4">Which account is right for you?</h4>
@@ -147,7 +143,6 @@
             </div>
         </div>
     </div>
-    <!-- END REGISTER -->
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">

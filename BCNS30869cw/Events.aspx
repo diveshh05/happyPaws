@@ -4,7 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER (from Eduleb's "SECTION TOP") -->
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -18,19 +17,16 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
 
-    <!-- START EVENTS (from Eduleb's blog grid, F26) -->
+    <!--events -->
     <section class="blog_area section-padding">
         <div class="container">
 
-            <!-- Shown by the backend only when there are no upcoming events -->
             <asp:Label ID="lblNoEvents" runat="server" Visible="false" CssClass="d-block text-center mb-4"
                 Text="There are no upcoming events right now. Please check back soon!" />
 
             <div class="row">
 
-                <!-- Event 1 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-1.jpg" class="img-fluid" alt="HappyPaws Adoption Day" />
@@ -44,7 +40,6 @@
                     </div>
                 </div>
 
-                <!-- Event 2 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-2.jpg" class="img-fluid" alt="Paws and Pancakes charity breakfast" />
@@ -58,7 +53,6 @@
                     </div>
                 </div>
 
-                <!-- Event 3 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-3.jpg" class="img-fluid" alt="Free pet care workshop" />
@@ -72,7 +66,6 @@
                     </div>
                 </div>
 
-                <!-- Event 4 -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-4.jpg" class="img-fluid" alt="Home for the Holidays adoption drive" />
@@ -86,7 +79,6 @@
                     </div>
                 </div>
 
-                <!-- Events 5 and 6: YOUR TURN (see below) -->
                 <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
                     <div class="single_blog hp-event-card">
                         <img runat="server" src="~/Assets/public/img/happypaws/event-5.jpg" class="img-fluid" alt="Volunteer orientation morning" />
@@ -117,8 +109,7 @@
             </div>
         </div>
     </section>
-    <!-- END EVENTS -->
-
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
 </asp:Content>

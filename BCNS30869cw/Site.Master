@@ -8,56 +8,48 @@
     <meta name="description" content="HappyPaws Mauritius - adopt a rescued pet or responsibly surrender your pet" />
     <title>HappyPaws</title>
 
-    <!-- Bootstrap 5.3.2 (shipped with Eduleb) -->
+   
     <link rel="stylesheet" href="~/Assets/public/bootstrap/css/bootstrap.min.css" />
-    <!-- Google Fonts used by Eduleb -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <!-- Icon fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="~/Assets/public/fonts/font-awesome.min.css" />
     <link rel="stylesheet" href="~/Assets/public/fonts/themify-icons.css" />
-    <!-- Plugin styles -->
     <link rel="stylesheet" href="~/Assets/public/owlcarousel/css/owl.carousel.css" />
     <link rel="stylesheet" href="~/Assets/public/owlcarousel/css/owl.theme.css" />
     <link rel="stylesheet" href="~/Assets/public/css/jquery-simple-mobilemenu.css" />
-    
     <link rel="stylesheet" href="~/Assets/public/css/animate.css" />
-    <!-- Eduleb's main stylesheet (load last so it wins over the others) -->
     <link rel="stylesheet" href="~/Assets/public/css/style.css" />
     <link rel="stylesheet" href="~/Assets/public/css/happypaws.css" />
 
-    <!-- Hole #1: lets a page add its own extra CSS if it needs to -->
+
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
 
-        <!-- Step 3b: the navbar goes here -->
 
-
-        <!-- START NAVBAR (from Eduleb) -->
+        <!--navbar -->
         <div id="navigation" class="navbar-light bg-faded site-navigation">
             <div class="container-fluid">
                 <div class="row">
-
-                    <!-- Logo -->
+                    
                     <div class="col-20 align-self-center">
                         <div class="site-logo">
                             <a runat="server" href="~/Default.aspx"><i class="fa-solid fa-paw"></i>HappyPaws</a>
                         </div>
                     </div>
 
-                    <!-- Desktop menu -->
+                    <!-- menu for desktop size -->
                     <div class="col-60 d-flex">
                         <nav id="main-menu">
                             <ul>
-                                <!-- Everyone sees these -->
+                                <!-- available for all people -->
                                 <li><a runat="server" href="~/Default.aspx">Home</a></li>
                                 <li><a runat="server" href="~/Catalogue.aspx">Pet Catalogue</a></li>
                                 <li><a runat="server" href="~/Events.aspx">Events</a></li>
 
-                                <!-- Only Adopters see this (switched on by C# after login) -->
+                                <!-- only the adopter see this -->
                                 <asp:PlaceHolder ID="phAdopterMenu" runat="server" Visible="false"> <!-- -->
                                     <li class="menu-item-has-children"><a href="#">Adopt</a>
                                         <ul>
@@ -69,7 +61,7 @@
                                     </li>
                                 </asp:PlaceHolder>
 
-                                <!-- Only Pet Owners see this -->
+                                <!-- only owner see this -->
                                 <asp:PlaceHolder ID="phOwnerMenu" runat="server" Visible="false">
                                     <li class="menu-item-has-children"><a href="#">Surrender</a>
                                         <ul>
@@ -84,30 +76,27 @@
                         </nav>
                     </div>
 
-                    <!-- Right side buttons (desktop only: d-none hides it, d-xl-block shows it on large screens) -->
                     <div class="col-20 d-none d-xl-block text-end align-self-center">
-                        <!-- Guests -->
-                        <asp:PlaceHolder ID="phGuestButtons" runat="server"> <!-- -->
+                        <!-- what all people see when not log in -->
+                        <asp:PlaceHolder ID="phGuestButtons" runat="server"> 
                             <a runat="server" href="~/Login.aspx" class="header-btn">Sign In</a>
                             <a runat="server" href="~/Register.aspx" class="btn_one">Register</a>
                         </asp:PlaceHolder>
-                        <!-- Logged-in members: greeting (F31) and sign out (F29) -->
+                        <!-- for any user who log in -->
                         <asp:PlaceHolder ID="phMemberButtons" runat="server" Visible="false"> <!-- -->
                             <asp:Label ID="lblGreeting" runat="server" CssClass="me-3" Text="Hi, Guest" /> <!-- -->
                             <asp:LinkButton ID="btnSignOut" runat="server" CssClass="btn_one" CausesValidation="false">Sign Out</asp:LinkButton>
                         </asp:PlaceHolder>
                     </div>
 
-                    <!-- Step 3b Part 4: YOUR mobile menu goes here -->
-
-                    <!-- Mobile menu (shown on small screens instead of the desktop menu) -->
+                    <!-- mobile menu -->
                     <ul class="mobile_menu">
-                        <!-- Everyone sees these -->
+                        
                         <li><a runat="server" href="~/Default.aspx">Home</a></li>
                         <li><a runat="server" href="~/Catalogue.aspx">Pet Catalogue</a></li>
                         <li><a runat="server" href="~/Events.aspx">Events</a></li>
-
-                        <!-- Only Adopters -->
+                        
+                        <!-- only adopter -->
                         <asp:PlaceHolder ID="phAdopterMobile" runat="server" Visible="false">
                             <li><a href="#">Adopt</a>
                                 <ul class="sub-menu">
@@ -119,7 +108,7 @@
                             </li>
                         </asp:PlaceHolder>
 
-                        <!-- Only Pet Owners: YOUR TURN (see below) -->
+                        <!-- only owner -->
                         <asp:PlaceHolder ID="phOwnerMobile" runat="server" Visible="false">
                             <li><a href="#">Surrender</a>
                                 <ul class="sub-menu">
@@ -131,13 +120,13 @@
                             </li>
                         </asp:PlaceHolder>
 
-                        <!-- Guests: Sign In / Register (the right-side buttons are hidden on phones) -->
+                        <!-- for anyone, can log in/register -->
                         <asp:PlaceHolder ID="phGuestMobile" runat="server">
                             <li><a runat="server" href="~/Login.aspx">Sign In</a></li>
                             <li><a runat="server" href="~/Register.aspx">Register</a></li>
                         </asp:PlaceHolder>
 
-                        <!-- Logged-in members: Sign Out -->
+                        <!-- sign out option for logged-in user -->
                         <asp:PlaceHolder ID="phMemberMobile" runat="server" Visible="false">
                             <li>
                                 <asp:LinkButton ID="btnSignOutMobile" runat="server" CausesValidation="false">Sign Out</asp:LinkButton></li>
@@ -148,20 +137,19 @@
                 </div>
             </div>
         </div>
-        <!-- END NAVBAR -->
 
 
-        <!-- Hole #2: each page's own content goes here -->
+        
         <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
 
-        <!-- Step 3c: the footer goes here -->
+        
 
-        <!-- START FOOTER (from Eduleb) -->
+        <!-- footer -->
         <div class="footer section-padding">
             <div class="container">
                 <div class="row">
 
-                    <!-- Column 1: logo, about text, social icons -->
+                    
                     <div class="col-lg-3 col-sm-6 col-xs-12">
                         <div class="single_footer">
                             <a runat="server" href="~/Default.aspx" class="footer-logo"><i class="fa-solid fa-paw"></i>HappyPaws</a>
@@ -176,7 +164,7 @@
                         </div>
                     </div>
 
-                    <!-- Column 2: quick links -->
+                    
                     <div class="col-lg-2 col-sm-6 col-xs-12">
                         <div class="single_footer">
                             <h4>Quick Links</h4>
@@ -190,7 +178,7 @@
                         </div>
                     </div>
 
-                    <!-- Column 3: Get Involved (YOUR TURN, see below) -->
+                    
                     <div class="col-lg-2 col-sm-6 col-xs-12">
                         <div class="single_footer">
                             <h4>Get Involved</h4>
@@ -203,7 +191,7 @@
                         </div>
                     </div>
 
-                    <!-- Column 4: contact details -->
+                    
                     <div class="col-lg-3 col-sm-6 col-xs-12">
                         <div class="single_footer">
                             <h4>Contact Us</h4>
@@ -222,7 +210,7 @@
                         </div>
                     </div>
 
-                    <!-- Column 5: opening hours (replaces Eduleb's "Download App") -->
+                    
                     <div class="col-lg-2 col-sm-6 col-xs-12">
                         <div class="single_footer">
                             <h4>Opening Hours</h4>
@@ -235,19 +223,16 @@
                 </div>
             </div>
         </div>
-        <!-- END FOOTER -->
+        
 
-        <!-- START FOOTER COPYRIGHT: template credit kept (required by the free licence) -->
+        <!-- template credit -->
         <div class="foot_copy">
             <div class="footer_copyright">
                 <p>&copy; <%: DateTime.Now.Year %> HappyPaws. Template by <a href="https://bestwpware.com/">Bestwpware</a> • Distributed by <a href="https://themewagon.com">ThemeWagon</a></p>
             </div>
         </div>
-        <!-- END FOOTER COPYRIGHT -->
-
     </form>
 
-    <!-- Site-wide scripts (needed on every page) -->
     <script src="<%: ResolveUrl("~/Assets/public/js/jquery-1.12.4.min.js") %>"></script>
     <script src="<%: ResolveUrl("~/Assets/public/bootstrap/js/bootstrap.min.js") %>"></script>
     <script src="<%: ResolveUrl("~/Assets/public/js/jquery-simple-mobilemenu.js") %>"></script>
@@ -255,7 +240,6 @@
     <script src="<%: ResolveUrl("~/Assets/public/js/wow.min.js") %>"></script>
     <script src="<%: ResolveUrl("~/Assets/public/js/site.js") %>"></script>
 
-    <!-- Hole #3: lets a page add its own scripts (e.g. the home page's testimonial slider) -->
     <asp:ContentPlaceHolder ID="scripts" runat="server"></asp:ContentPlaceHolder>
 </body>
 </html>

@@ -61,13 +61,9 @@
                             <!-- Pet type (the backend will load the list from the PetTypes table, managed by the admin in F24) -->
                             <div class="form-group col-md-6">
                                 <asp:Label runat="server" AssociatedControlID="ddlPetType" Text="Type of pet" />
-                                <asp:DropDownList ID="ddlPetType" runat="server" CssClass="form-select">
+                                <asp:DropDownList ID="ddlPetType" runat="server" CssClass="form-select"
+                                    AppendDataBoundItems="true" DataTextField="Name" DataValueField="PetTypeId">
                                     <asp:ListItem Value="" Text="-- Please choose --" />
-                                    <asp:ListItem Value="Dog" Text="Dog" />
-                                    <asp:ListItem Value="Cat" Text="Cat" />
-                                    <asp:ListItem Value="Rabbit" Text="Rabbit" />
-                                    <asp:ListItem Value="Bird" Text="Bird" />
-                                    <asp:ListItem Value="Other" Text="Other" />
                                 </asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="rfvPetType" runat="server" ControlToValidate="ddlPetType"
                                     ErrorMessage="Please choose the type of pet." CssClass="hp-error" Display="Dynamic" SetFocusOnError="true" />

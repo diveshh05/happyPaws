@@ -3,7 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER -->
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -17,18 +16,15 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
 
-    <!-- START PROFILE (F10) -->
     <div class="contact_area section-padding">
         <div class="container">
             <div class="row">
 
-                <!-- ========== LEFT: two forms ========== -->
                 <div class="col-lg-8 col-sm-12 col-xs-12 mb-4">
                     <div class="contact">
 
-                        <!-- ===== FORM 1: personal details (ValidationGroup "Details") ===== -->
+                        <!-- Personal details -->
                         <h3 class="mb-2">Personal details</h3>
                         <p class="mb-4">Keep your details up to date so we can contact you about your applications.</p>
 
@@ -87,7 +83,7 @@
                             </div>
                         </div>
 
-                        <!-- ===== FORM 2: change password (ValidationGroup "Password") ===== -->
+                        <!--FORM 2: change password (ValidationGroup "Password") ===== -->
                         <h3 class="mb-2">Change password</h3>
                         <p class="mb-4">For your security, enter your current password first.</p>
 
@@ -156,7 +152,6 @@
             </div>
         </div>
     </div>
-    <!-- END PROFILE -->
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">

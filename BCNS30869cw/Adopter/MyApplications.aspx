@@ -3,7 +3,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <!-- START PAGE BANNER -->
     <section class="section-top">
         <div class="container">
             <div class="col-lg-10 offset-lg-1 text-center">
@@ -17,13 +16,10 @@
             </div>
         </div>
     </section>
-    <!-- END PAGE BANNER -->
 
-    <!-- START MY APPLICATIONS (F16) -->
     <section class="section-padding">
         <div class="container">
 
-            <!-- Heading + button -->
             <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
                 <div>
                     <h3 class="mb-1">Your adoption applications</h3>
@@ -32,11 +28,9 @@
                 <a runat="server" href="~/Catalogue.aspx" class="btn_one mt-3 mt-md-0">Browse more pets</a>
             </div>
 
-            <!-- Shown by the backend when the adopter has no applications yet -->
             <asp:Label ID="lblNoApplications" runat="server" Visible="false" CssClass="d-block text-center mb-4"
                 Text="You have not applied for any pets yet. Browse our catalogue to find your new friend!" />
 
-            <!-- Applications table (the backend will build the rows from the database) -->
             <div class="hp-card">
                 <div class="table-responsive">
                     <table class="table align-middle hp-table mb-0">
@@ -51,7 +45,6 @@
                         </thead>
                         <tbody>
 
-                            <!-- Application 1: Pending -->
                             <tr>
                                 <td>
                                     <div class="d-flex align-items-center">
@@ -68,7 +61,6 @@
                                 <td><a runat="server" href="~/Adopter/PetProfile.aspx">View pet</a></td>
                             </tr>
 
-                            <!-- Application 2: Approved -->
                             <tr>
                                 <td>
                                     <div class="d-flex align-items-center">
@@ -85,7 +77,6 @@
                                 <td><a runat="server" href="~/Adopter/PetProfile.aspx">View pet</a></td>
                             </tr>
 
-                            <!-- Application 3: Under review -->
                             <tr>
                                 <td>
                                     <div class="d-flex align-items-center">
@@ -102,7 +93,6 @@
                                 <td><a runat="server" href="~/Adopter/PetProfile.aspx">View pet</a></td>
                             </tr>
 
-                            <!-- Application 4: Rejected -->
                             <tr>
                                 <td>
                                     <div class="d-flex align-items-center">
@@ -123,8 +113,6 @@
                     </table>
                 </div>
             </div>
-
-            <!-- What each status means -->
             <div class="hp-legend mt-4">
                 <p class="mb-2"><span class="badge rounded-pill text-bg-warning">Pending</span>Received, waiting to be reviewed.</p>
                 <p class="mb-2"><span class="badge rounded-pill text-bg-info">Under review</span>Our team is checking your application and may contact you.</p>
@@ -134,8 +122,6 @@
 
         </div>
     </section>
-    <!-- END MY APPLICATIONS -->
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="scripts" runat="server">
 </asp:Content>
